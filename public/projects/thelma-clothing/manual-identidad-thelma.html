@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Identidad — THELMA CLOTHING</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Great+Vibes&display=swap');
+
+        :root {
+            --warm-taupe: #A89A8A;
+            --soft-beige: #D5CCBF;
+            --cream: #EBE4DA;
+            --light-cream: #F5F0EA;
+            --dark-brown: #6B5E50;
+            --charcoal: #3D3630;
+            --white: #FFFFFF;
+            --off-white: #FAFAF8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--charcoal);
+            background: var(--white);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* ========== COVER ========== */
+        .cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(160deg, var(--cream) 0%, var(--soft-beige) 50%, var(--warm-taupe) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(255,255,255,0.15) 0%, transparent 70%);
+            transform: rotate(-15deg);
+        }
+
+        .cover-logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: var(--light-cream);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover-logo .monogram {
+            font-family: 'Great Vibes', cursive;
+            font-size: 72px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .cover-logo .brand-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            letter-spacing: 5px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .cover-logo .brand-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7px;
+            letter-spacing: 4px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .cover h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 200;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--dark-brown);
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover .year {
+            position: absolute;
+            bottom: 40px;
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: var(--dark-brown);
+            font-weight: 300;
+        }
+
+        /* ========== SECTIONS ========== */
+        .section {
+            padding: 100px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            page-break-before: always;
+        }
+
+        .section-full {
+            padding: 100px 80px;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .section-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 72px;
+            font-weight: 300;
+            color: var(--soft-beige);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            font-weight: 400;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .section-line {
+            width: 60px;
+            height: 1px;
+            background: var(--warm-taupe);
+            margin-bottom: 40px;
+        }
+
+        .section-text {
+            font-size: 14px;
+            line-height: 1.9;
+            color: var(--dark-brown);
+            max-width: 700px;
+            font-weight: 300;
+        }
+
+        /* ========== INDEX ========== */
+        .index {
+            background: var(--off-white);
+            padding: 100px 80px;
+            max-width: 100%;
+        }
+
+        .index-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .index-item {
+            padding: 30px 40px;
+            border-bottom: 1px solid var(--soft-beige);
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .index-item .num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: var(--warm-taupe);
+            font-weight: 300;
+            min-width: 40px;
+        }
+
+        .index-item .label {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-brown);
+            font-weight: 400;
+        }
+
+        /* ========== BRAND PHILOSOPHY ========== */
+        .philosophy {
+            background: var(--white);
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-top: 60px;
+        }
+
+        .philosophy-card {
+            padding: 40px;
+            background: var(--off-white);
+            border-left: 3px solid var(--warm-taupe);
+        }
+
+        .philosophy-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .philosophy-card p {
+            font-size: 13px;
+            line-height: 1.9;
+            color: var(--dark-brown);
+            font-weight: 300;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .value-item .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--cream);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            color: var(--warm-taupe);
+        }
+
+        .value-item h5 {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .value-item p {
+            font-size: 12px;
+            color: var(--dark-brown);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* ========== LOGO SECTION ========== */
+        .logo-section {
+            background: var(--off-white);
+        }
+
+        .logo-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px;
+            background: var(--white);
+            border: 1px solid var(--cream);
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .logo-main {
+            text-align: center;
+        }
+
+        .logo-main .monogram-large {
+            font-family: 'Great Vibes', cursive;
+            font-size: 120px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .logo-main .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            letter-spacing: 8px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        .logo-main .logo-subtext {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9px;
+            letter-spacing: 6px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        /* Logo Versions */
+        .logo-versions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .logo-version-card {
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .logo-version-preview {
+            padding: 50px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+
+        .logo-version-preview.light {
+            background: var(--white);
+        }
+
+        .logo-version-preview.beige {
+            background: var(--cream);
+        }
+
+        .logo-version-preview.dark {
+            background: var(--charcoal);
+        }
+
+        .logo-version-label {
+            padding: 15px 20px;
+            background: var(--off-white);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-brown);
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .version-mono {
+            font-family: 'Great Vibes', cursive;
+            font-size: 60px;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .version-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .version-subtext {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        /* ========== CLEAR SPACE & SIZE ========== */
+        .clearspace-demo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .clearspace-box {
+            position: relative;
+            padding: 60px 80px;
+            border: 1px dashed var(--warm-taupe);
+            display: inline-block;
+        }
+
+        .clearspace-box::before {
+            content: 'X';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            color: var(--warm-taupe);
+        }
+
+        .clearspace-box::after {
+            content: 'X';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            color: var(--warm-taupe);
+        }
+
+        .size-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+            align-items: end;
+        }
+
+        .size-item {
+            text-align: center;
+        }
+
+        .size-item .size-label {
+            font-size: 11px;
+            color: var(--dark-brown);
+            margin-top: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .size-item .size-value {
+            font-size: 10px;
+            color: var(--warm-taupe);
+            margin-top: 5px;
+        }
+
+        /* ========== COLOR PALETTE ========== */
+        .palette-section {
+            background: var(--white);
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+            margin: 50px 0;
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .palette-primary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            grid-column: 1 / -1;
+        }
+
+        .color-card {
+            padding: 0;
+        }
+
+        .color-swatch {
+            height: 180px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 25px 30px;
+            background: var(--white);
+        }
+
+        .color-name {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        .color-codes {
+            font-size: 11px;
+            color: var(--dark-brown);
+            line-height: 2;
+            font-weight: 300;
+        }
+
+        .color-codes span {
+            display: block;
+        }
+
+        .palette-secondary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            grid-column: 1 / -1;
+            border-top: 1px solid var(--cream);
+        }
+
+        .color-card-sm .color-swatch {
+            height: 100px;
+        }
+
+        .color-card-sm .color-info {
+            padding: 20px;
+        }
+
+        .color-card-sm .color-name {
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+
+        .color-card-sm .color-codes {
+            font-size: 10px;
+        }
+
+        /* Color usage */
+        .color-usage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .usage-card {
+            padding: 30px;
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+        }
+
+        .usage-card h5 {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: var(--charcoal);
+            font-weight: 500;
+        }
+
+        .usage-bar {
+            display: flex;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .usage-card p {
+            font-size: 12px;
+            color: var(--dark-brown);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* ========== TYPOGRAPHY ========== */
+        .typo-section {
+            background: var(--off-white);
+        }
+
+        .typo-showcase {
+            margin: 50px 0;
+        }
+
+        .typo-family {
+            padding: 50px;
+            border: 1px solid var(--cream);
+            background: var(--white);
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .typo-family-name {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--warm-taupe);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .typo-sample-large {
+            font-size: 48px;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .typo-alphabet {
+            font-size: 18px;
+            color: var(--dark-brown);
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .typo-weights {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid var(--cream);
+        }
+
+        .typo-weight-item {
+            text-align: center;
+        }
+
+        .typo-weight-item .weight-sample {
+            font-size: 28px;
+            color: var(--charcoal);
+            margin-bottom: 8px;
+        }
+
+        .typo-weight-item .weight-label {
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--warm-taupe);
+            font-weight: 400;
+        }
+
+        /* Type hierarchy */
+        .type-hierarchy {
+            margin: 50px 0;
+            padding: 50px;
+            background: var(--white);
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+        }
+
+        .hierarchy-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            align-items: baseline;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--cream);
+        }
+
+        .hierarchy-item:last-child {
+            border-bottom: none;
+        }
+
+        .hierarchy-meta {
+            font-size: 10px;
+            color: var(--warm-taupe);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .h-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            font-weight: 400;
+            color: var(--charcoal);
+        }
+
+        .h-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            font-weight: 400;
+            color: var(--charcoal);
+        }
+
+        .h-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+        }
+
+        .h-body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--dark-brown);
+            line-height: 1.8;
+        }
+
+        .h-caption {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--warm-taupe);
+        }
+
+        /* ========== INCORRECT USES ========== */
+        .incorrect-section {
+            background: var(--white);
+        }
+
+        .incorrect-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .incorrect-card {
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .incorrect-preview {
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--off-white);
+            position: relative;
+        }
+
+        .incorrect-preview::after {
+            content: '✕';
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            color: #C0392B;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .incorrect-label {
+            padding: 18px 20px;
+            font-size: 11px;
+            color: var(--dark-brown);
+            font-weight: 400;
+            text-align: center;
+            border-top: 1px solid var(--cream);
+            line-height: 1.5;
+        }
+
+        /* Incorrect variations */
+        .stretched {
+            transform: scaleX(1.5);
+        }
+
+        .rotated {
+            transform: rotate(25deg);
+        }
+
+        .wrong-color .version-mono,
+        .wrong-color .version-text,
+        .wrong-color .version-subtext {
+            color: #E74C3C;
+        }
+
+        .low-contrast .version-mono,
+        .low-contrast .version-text,
+        .low-contrast .version-subtext {
+            color: #E8E0D6;
+        }
+
+        .shadow-effect .version-mono {
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+        }
+
+        .outline-effect .version-mono {
+            color: transparent;
+            -webkit-text-stroke: 2px var(--warm-taupe);
+        }
+
+        /* ========== APPLICATIONS ========== */
+        .applications-section {
+            background: var(--off-white);
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .app-card {
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .app-preview {
+            padding: 40px;
+            min-height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .app-info {
+            padding: 20px 25px;
+            border-top: 1px solid var(--cream);
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-brown);
+            font-weight: 400;
+        }
+
+        /* Business Card Mockup */
+        .business-card {
+            width: 320px;
+            height: 190px;
+            background: var(--cream);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .business-card .bc-mono {
+            font-family: 'Great Vibes', cursive;
+            font-size: 42px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .business-card .bc-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;
+            letter-spacing: 5px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .business-card .bc-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 6px;
+            letter-spacing: 4px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        /* Tag Mockup */
+        .hang-tag {
+            width: 140px;
+            height: 220px;
+            background: var(--light-cream);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            position: relative;
+        }
+
+        .hang-tag::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid var(--soft-beige);
+        }
+
+        .hang-tag .tag-mono {
+            font-family: 'Great Vibes', cursive;
+            font-size: 36px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .hang-tag .tag-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7px;
+            letter-spacing: 4px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        .hang-tag .tag-line {
+            width: 30px;
+            height: 1px;
+            background: var(--soft-beige);
+            margin: 15px 0;
+        }
+
+        .hang-tag .tag-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--dark-brown);
+            font-weight: 300;
+        }
+
+        /* Shopping Bag */
+        .shopping-bag {
+            width: 200px;
+            height: 240px;
+            background: var(--cream);
+            border-radius: 0 0 4px 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        .shopping-bag::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50px;
+            width: 100px;
+            height: 40px;
+            border: 2px solid var(--soft-beige);
+            border-bottom: none;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .shopping-bag .bag-mono {
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .shopping-bag .bag-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;
+            letter-spacing: 5px;
+            color: var(--warm-taupe);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        /* Social Media */
+        .social-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social-circle.s1 {
+            background: var(--cream);
+        }
+
+        .social-circle.s2 {
+            background: var(--warm-taupe);
+        }
+
+        .social-circle.s3 {
+            background: var(--charcoal);
+        }
+
+        .social-circle .s-mono {
+            font-family: 'Great Vibes', cursive;
+            font-size: 30px;
+            line-height: 1;
+        }
+
+        .social-circle.s1 .s-mono { color: var(--warm-taupe); }
+        .social-circle.s2 .s-mono { color: var(--white); }
+        .social-circle.s3 .s-mono { color: var(--cream); }
+
+        /* ========== PATTERNS & TEXTURES ========== */
+        .pattern-section {
+            background: var(--white);
+        }
+
+        .pattern-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .pattern-card {
+            height: 250px;
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .pattern-card .pattern-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 12px;
+            background: rgba(255,255,255,0.9);
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-brown);
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .pattern-monogram {
+            background: var(--cream);
+            font-family: 'Great Vibes', cursive;
+            font-size: 200px;
+            color: rgba(168, 154, 138, 0.15);
+            overflow: hidden;
+        }
+
+        .pattern-minimal {
+            background: repeating-linear-gradient(
+                90deg,
+                var(--off-white),
+                var(--off-white) 20px,
+                var(--cream) 20px,
+                var(--cream) 21px
+            );
+        }
+
+        .pattern-gradient {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--warm-taupe) 100%);
+        }
+
+        /* ========== PHOTOGRAPHY STYLE ========== */
+        .photo-section {
+            background: var(--off-white);
+        }
+
+        .photo-guidelines {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .photo-guideline-card {
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+        }
+
+        .photo-guideline-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+        }
+
+        .photo-guideline-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .photo-guideline-card li {
+            font-size: 13px;
+            color: var(--dark-brown);
+            font-weight: 300;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--cream);
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .photo-guideline-card li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--warm-taupe);
+        }
+
+        .photo-guideline-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* ========== TONE OF VOICE ========== */
+        .tone-section {
+            background: var(--white);
+        }
+
+        .tone-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .tone-card {
+            padding: 40px;
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+        }
+
+        .tone-card.do-card {
+            background: var(--off-white);
+            border-left: 3px solid var(--warm-taupe);
+        }
+
+        .tone-card.dont-card {
+            background: var(--white);
+            border-left: 3px solid #C0392B;
+        }
+
+        .tone-card h5 {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .tone-card.do-card h5 { color: var(--warm-taupe); }
+        .tone-card.dont-card h5 { color: #C0392B; }
+
+        .tone-example {
+            font-size: 14px;
+            color: var(--dark-brown);
+            font-style: italic;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--cream);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .tone-example:last-child {
+            border-bottom: none;
+        }
+
+        /* ========== SOCIAL MEDIA — INSTAGRAM LAYOUT ========== */
+        .social-section {
+            background: var(--off-white) !important;
+            padding: 80px 40px !important;
+            max-width: 100% !important;
+        }
+
+        /* Main Layout: posts — phone — posts */
+        .ig-layout {
+            display: grid;
+            grid-template-columns: 280px 380px 280px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        /* Floating Post Cards */
+        .ig-float-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .ig-float-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border: 1px solid var(--cream);
+        }
+
+        .ig-float-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+        }
+
+        .ig-float-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--cream);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .ig-float-avatar span {
+            font-family: 'Great Vibes', cursive;
+            font-size: 16px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .ig-float-user {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--charcoal);
+            line-height: 1.3;
+        }
+
+        .ig-float-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            color: var(--warm-taupe);
+            font-weight: 300;
+        }
+
+        .ig-float-body {
+            width: 100%;
+            aspect-ratio: 4/5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .ig-float-footer {
+            padding: 12px 14px;
+        }
+
+        .ig-float-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+
+        .ig-float-likes {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            color: var(--warm-taupe);
+            font-weight: 300;
+            margin-top: 2px;
+        }
+
+        /* Phone Mockup */
+        .ig-phone {
+            background: var(--white);
+            border-radius: 40px;
+            border: 5px solid #E0E0E0;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+            position: relative;
+        }
+
+        .ig-phone-notch {
+            width: 100px;
+            height: 28px;
+            background: #E0E0E0;
+            border-radius: 0 0 18px 18px;
+            margin: 0 auto;
+        }
+
+        .ig-topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 16px;
+            border-bottom: 1px solid #EFEFEF;
+        }
+
+        .ig-topbar-user {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .ig-topbar-user svg { width: 12px; height: 12px; }
+
+        .ig-topbar-icons { display: flex; gap: 16px; }
+        .ig-topbar-icons svg { width: 20px; height: 20px; color: var(--charcoal); }
+
+        .ig-profile { padding: 14px 16px 10px; }
+
+        .ig-profile-top {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .ig-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--cream);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border: 3px solid transparent;
+            background-image: linear-gradient(var(--cream), var(--cream)), linear-gradient(135deg, #F5E6CA, #C4A882, #8B7355);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+
+        .ig-avatar span {
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            color: var(--warm-taupe);
+            line-height: 1;
+        }
+
+        .ig-stats { display: flex; gap: 16px; flex: 1; justify-content: center; }
+        .ig-stat { text-align: center; }
+        .ig-stat-num { font-family: 'Montserrat'; font-size: 14px; font-weight: 600; color: var(--charcoal); }
+        .ig-stat-label { font-family: 'Montserrat'; font-size: 10px; color: var(--dark-brown); font-weight: 300; }
+
+        .ig-bio { margin-top: 10px; }
+        .ig-bio-name { font-family: 'Montserrat'; font-size: 12px; font-weight: 600; color: var(--charcoal); }
+        .ig-bio-cat { font-family: 'Montserrat'; font-size: 11px; color: var(--warm-taupe); font-weight: 400; margin-bottom: 2px; }
+        .ig-bio-text { font-family: 'Montserrat'; font-size: 11px; color: var(--charcoal); font-weight: 300; line-height: 1.4; }
+        .ig-bio-link { font-family: 'Montserrat'; font-size: 11px; color: #3D5A80; font-weight: 500; }
+
+        .ig-buttons { display: flex; gap: 5px; padding: 0 16px; margin-bottom: 10px; }
+        .ig-btn { flex: 1; padding: 6px 0; border-radius: 8px; font-family: 'Montserrat'; font-size: 11px; font-weight: 500; text-align: center; }
+        .ig-btn-primary { background: var(--warm-taupe); color: var(--white); }
+        .ig-btn-secondary { background: #EFEFEF; color: var(--charcoal); }
+
+        .ig-highlights {
+            display: flex;
+            gap: 12px;
+            padding: 6px 16px 10px;
+            overflow-x: hidden;
+            border-bottom: 1px solid #EFEFEF;
+        }
+
+        .ig-highlight { display: flex; flex-direction: column; align-items: center; gap: 3px; flex-shrink: 0; }
+
+        .ig-highlight-circle {
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            border: 1.5px solid #DBDBDB;
+        }
+
+        .ig-highlight-circle.hl1 { background: var(--cream); }
+        .ig-highlight-circle.hl2 { background: var(--soft-beige); }
+        .ig-highlight-circle.hl3 { background: var(--light-cream); }
+        .ig-highlight-circle.hl4 { background: var(--cream); }
+
+        .ig-highlight-circle .hl-icon { font-size: 16px; color: var(--warm-taupe); line-height: 1; }
+        .ig-highlight-label { font-family: 'Montserrat'; font-size: 9px; color: var(--charcoal); font-weight: 300; }
+
+        .ig-tabs { display: flex; border-bottom: 1px solid #EFEFEF; }
+        .ig-tab { flex: 1; padding: 10px 0; display: flex; justify-content: center; align-items: center; }
+        .ig-tab.active { border-bottom: 2px solid var(--charcoal); }
+        .ig-tab svg { width: 18px; height: 18px; color: var(--charcoal); }
+        .ig-tab.inactive svg { color: #C0C0C0; }
+
+        .ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+
+        .ig-post {
+            aspect-ratio: 1;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 10px; position: relative; overflow: hidden;
+        }
+
+        .ig-post.p1 { background: var(--cream); }
+        .ig-post.p2 { background: var(--warm-taupe); }
+        .ig-post.p3 { background: linear-gradient(135deg, var(--soft-beige), var(--warm-taupe)); }
+        .ig-post.p4 { background: var(--charcoal); }
+        .ig-post.p5 { background: var(--light-cream); }
+        .ig-post.p6 { background: linear-gradient(160deg, var(--cream), var(--soft-beige)); }
+        .ig-post.p7 { background: var(--soft-beige); }
+        .ig-post.p8 { background: var(--dark-brown); }
+        .ig-post.p9 { background: var(--cream); }
+
+        .ig-bottomnav { display: flex; justify-content: space-around; align-items: center; padding: 8px 0; border-top: 1px solid #EFEFEF; }
+        .ig-bottomnav svg { width: 20px; height: 20px; color: var(--charcoal); }
+        .ig-bottomnav-avatar { width: 22px; height: 22px; border-radius: 50%; background: var(--cream); border: 1.5px solid var(--charcoal); }
+
+        .ig-phone-bar { width: 100px; height: 4px; background: var(--charcoal); border-radius: 4px; margin: 6px auto 4px; }
+
+        /* Guidelines on dark bg */
+        .ig-guidelines {
+            margin-top: 50px;
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            max-width: 1040px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ig-guidelines h5 { color: var(--charcoal) !important; }
+        .ig-guidelines p { color: var(--dark-brown) !important; }
+
+        @media (max-width: 1100px) {
+            .ig-layout { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+            .ig-float-col { flex-direction: row; overflow-x: auto; }
+            .ig-float-card { min-width: 250px; }
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--charcoal);
+            padding: 80px;
+            text-align: center;
+        }
+
+        .footer .f-mono {
+            font-family: 'Great Vibes', cursive;
+            font-size: 60px;
+            color: var(--soft-beige);
+            line-height: 1;
+        }
+
+        .footer .f-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            letter-spacing: 6px;
+            color: var(--soft-beige);
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .footer .f-line {
+            width: 40px;
+            height: 1px;
+            background: var(--warm-taupe);
+            margin: 30px auto;
+        }
+
+        .footer .f-copy {
+            font-size: 11px;
+            color: var(--warm-taupe);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            .section, .section-full {
+                page-break-before: always;
+            }
+            .cover {
+                page-break-after: always;
+            }
+            body {
+                font-size: 12px;
+            }
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 900px) {
+            .section, .section-full, .index {
+                padding: 60px 30px;
+            }
+            .philosophy-grid, .logo-versions, .incorrect-grid, .app-grid, .color-usage, .photo-guidelines, .tone-grid, .social-templates, .pattern-grid {
+                grid-template-columns: 1fr;
+            }
+            .palette-primary, .palette-secondary, .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .index-grid {
+                grid-template-columns: 1fr;
+            }
+            .hierarchy-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .size-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== COVER ========== -->
+    <div class="cover">
+        <div class="cover-logo">
+            <div class="monogram">t</div>
+            <div class="brand-name">Thelma</div>
+            <div class="brand-sub">Clothing</div>
+        </div>
+        <h1>Manual de Identidad</h1>
+        <h2>Brand Guidelines</h2>
+        <div class="year">2026</div>
+    </div>
+
+    <!-- ========== INDEX ========== -->
+    <!-- ========== 01. BRAND PHILOSOPHY ========== -->
+    <div class="section philosophy">
+        <div class="section-number">01</div>
+        <div class="section-title">Filosofía de Marca</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            Thelma Clothing nace de la convicción de que la moda es una extensión de la identidad personal.
+            Creemos en prendas que trascienden tendencias efímeras, diseñadas para mujeres que valoran
+            la elegancia atemporal, la calidad artesanal y la expresión auténtica de su estilo.
+        </div>
+
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <h4>Misión</h4>
+                <p>Crear prendas que combinen diseño contemporáneo con calidad excepcional,
+                   ofreciendo a cada mujer la posibilidad de expresar su esencia a través de
+                   una moda consciente, sofisticada y accesible.</p>
+            </div>
+            <div class="philosophy-card">
+                <h4>Visión</h4>
+                <p>Ser la marca de referencia en moda femenina que inspire confianza y autenticidad,
+                   reconocida por su compromiso con el diseño atemporal, la sustentabilidad y
+                   la conexión emocional con cada clienta.</p>
+            </div>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="icon">I</div>
+                <h5>Elegancia</h5>
+                <p>Sofisticación sin esfuerzo en cada prenda y cada detalle</p>
+            </div>
+            <div class="value-item">
+                <div class="icon">II</div>
+                <h5>Autenticidad</h5>
+                <p>Fidelidad a nuestra esencia y a la individualidad de cada mujer</p>
+            </div>
+            <div class="value-item">
+                <div class="icon">III</div>
+                <h5>Calidad</h5>
+                <p>Materiales premium y confección cuidada en cada pieza</p>
+            </div>
+            <div class="value-item">
+                <div class="icon">IV</div>
+                <h5>Atemporalidad</h5>
+                <p>Diseños que perduran más allá de las tendencias pasajeras</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 02. LOGO ========== -->
+    <div class="section logo-section">
+        <div class="section-number">02</div>
+        <div class="section-title">Logotipo</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            El logotipo de Thelma Clothing se compone de un monograma caligráfico "t"
+            acompañado por la tipografía "THELMA CLOTHING". La elegancia de la cursiva
+            transmite feminidad y sofisticación, mientras que la sans-serif aporta modernidad
+            y claridad.
+        </div>
+
+        <div class="logo-display">
+            <div class="logo-main">
+                <div class="monogram-large">t</div>
+                <div class="logo-text">Thelma</div>
+                <div class="logo-subtext">Clothing</div>
+            </div>
+        </div>
+
+        <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin-bottom: 20px; font-weight: 500;">Versiones del Logo</p>
+
+        <div class="logo-versions">
+            <div class="logo-version-card">
+                <div class="logo-version-preview light">
+                    <div>
+                        <div class="version-mono" style="color: var(--warm-taupe);">t</div>
+                        <div class="version-text" style="color: var(--warm-taupe);">Thelma</div>
+                        <div class="version-subtext" style="color: var(--warm-taupe);">Clothing</div>
+                    </div>
+                </div>
+                <div class="logo-version-label">Versión Principal</div>
+            </div>
+            <div class="logo-version-card">
+                <div class="logo-version-preview dark">
+                    <div>
+                        <div class="version-mono" style="color: var(--cream);">t</div>
+                        <div class="version-text" style="color: var(--cream);">Thelma</div>
+                        <div class="version-subtext" style="color: var(--cream);">Clothing</div>
+                    </div>
+                </div>
+                <div class="logo-version-label">Versión Negativa</div>
+            </div>
+        </div>
+
+        <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin-bottom: 20px; margin-top: 40px; font-weight: 500;">Isotipo — Monograma</p>
+        <div class="section-text" style="margin-bottom: 30px;">
+            El monograma "t" puede utilizarse de forma independiente como isotipo en
+            aplicaciones donde el espacio es reducido, como íconos de redes sociales,
+            etiquetas de prendas o favicons.
+        </div>
+
+        <div class="logo-versions" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="logo-version-card">
+                <div class="logo-version-preview light" style="min-height: 160px;">
+                    <div style="width: 90px; height: 90px; border-radius: 50%; background: var(--cream); display: flex; justify-content: center; align-items: center;">
+                        <span style="font-family: 'Great Vibes', cursive; font-size: 44px; color: var(--warm-taupe);">t</span>
+                    </div>
+                </div>
+                <div class="logo-version-label">Circular — Claro</div>
+            </div>
+            <div class="logo-version-card">
+                <div class="logo-version-preview light" style="min-height: 160px;">
+                    <div style="width: 90px; height: 90px; border-radius: 50%; background: var(--warm-taupe); display: flex; justify-content: center; align-items: center;">
+                        <span style="font-family: 'Great Vibes', cursive; font-size: 44px; color: var(--white);">t</span>
+                    </div>
+                </div>
+                <div class="logo-version-label">Circular — Taupe</div>
+            </div>
+            <div class="logo-version-card">
+                <div class="logo-version-preview light" style="min-height: 160px;">
+                    <div style="width: 90px; height: 90px; border-radius: 50%; background: var(--charcoal); display: flex; justify-content: center; align-items: center;">
+                        <span style="font-family: 'Great Vibes', cursive; font-size: 44px; color: var(--cream);">t</span>
+                    </div>
+                </div>
+                <div class="logo-version-label">Circular — Oscuro</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 03. CLEAR SPACE ========== -->
+    <div class="section" style="background: var(--white);">
+        <div class="section-number">03</div>
+        <div class="section-title">Área de Reserva y Tamaño Mínimo</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            El área de reserva garantiza la legibilidad y presencia del logotipo.
+            Se define una zona de protección equivalente a la altura de la letra "t" del monograma (valor X)
+            en todos sus lados. Ningún elemento gráfico o texto debe invadir esta zona.
+        </div>
+
+        <div class="clearspace-demo">
+            <div class="clearspace-box">
+                <div style="text-align: center;">
+                    <div style="font-family: 'Great Vibes', cursive; font-size: 60px; color: var(--warm-taupe); line-height: 1;">t</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 5px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; color: var(--warm-taupe); text-transform: uppercase; font-weight: 300;">Clothing</div>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin: 40px 0 20px; font-weight: 500;">Tamaño Mínimo</p>
+
+        <div class="size-grid">
+            <div class="size-item">
+                <div style="text-align: center;">
+                    <div style="font-family: 'Great Vibes', cursive; font-size: 48px; color: var(--warm-taupe); line-height: 1;">t</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 6px; letter-spacing: 3px; color: var(--warm-taupe); text-transform: uppercase; font-weight: 300;">Clothing</div>
+                </div>
+                <div class="size-label">Digital Grande</div>
+                <div class="size-value">180px ancho mín.</div>
+            </div>
+            <div class="size-item">
+                <div style="text-align: center;">
+                    <div style="font-family: 'Great Vibes', cursive; font-size: 36px; color: var(--warm-taupe); line-height: 1;">t</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                </div>
+                <div class="size-label">Digital Medio</div>
+                <div class="size-value">120px ancho mín.</div>
+            </div>
+            <div class="size-item">
+                <div style="text-align: center;">
+                    <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: var(--warm-taupe); line-height: 1;">t</div>
+                </div>
+                <div class="size-label">Solo Isotipo</div>
+                <div class="size-value">40px ancho mín.</div>
+            </div>
+            <div class="size-item">
+                <div style="text-align: center;">
+                    <div style="font-family: 'Great Vibes', cursive; font-size: 36px; color: var(--warm-taupe); line-height: 1;">t</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 5px; letter-spacing: 2px; color: var(--warm-taupe); text-transform: uppercase; font-weight: 300;">Clothing</div>
+                </div>
+                <div class="size-label">Impresión</div>
+                <div class="size-value">25mm ancho mín.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 04. COLOR PALETTE ========== -->
+    <div class="section palette-section">
+        <div class="section-number">04</div>
+        <div class="section-title">Paleta Cromática</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            La paleta de Thelma Clothing se inspira en tonalidades naturales y cálidas que evocan
+            sofisticación, calidez y atemporalidad. Los tonos neutros reflejan la esencia de la marca:
+            elegante, accesible y femenina.
+        </div>
+
+        <div class="palette-grid">
+            <div class="palette-primary">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #A89A8A;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warm Taupe</div>
+                        <div class="color-codes">
+                            <span>HEX: #A89A8A</span>
+                            <span>RGB: 168, 154, 138</span>
+                            <span>CMYK: 30, 30, 38, 8</span>
+                            <span>Pantone: Warm Gray 7C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #D5CCBF;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Soft Beige</div>
+                        <div class="color-codes">
+                            <span>HEX: #D5CCBF</span>
+                            <span>RGB: 213, 204, 191</span>
+                            <span>CMYK: 15, 15, 22, 2</span>
+                            <span>Pantone: Warm Gray 3C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #3D3630;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Charcoal</div>
+                        <div class="color-codes">
+                            <span>HEX: #3D3630</span>
+                            <span>RGB: 61, 54, 48</span>
+                            <span>CMYK: 55, 53, 58, 60</span>
+                            <span>Pantone: Black 7C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="palette-secondary">
+                <div class="color-card color-card-sm">
+                    <div class="color-swatch" style="background: #EBE4DA;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Cream</div>
+                        <div class="color-codes">
+                            <span>HEX: #EBE4DA</span>
+                            <span>RGB: 235, 228, 218</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-card color-card-sm">
+                    <div class="color-swatch" style="background: #F5F0EA;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Cream</div>
+                        <div class="color-codes">
+                            <span>HEX: #F5F0EA</span>
+                            <span>RGB: 245, 240, 234</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-card color-card-sm">
+                    <div class="color-swatch" style="background: #6B5E50;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Brown</div>
+                        <div class="color-codes">
+                            <span>HEX: #6B5E50</span>
+                            <span>RGB: 107, 94, 80</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-card color-card-sm">
+                    <div class="color-swatch" style="background: #FFFFFF; border-bottom: 1px solid #eee;"></div>
+                    <div class="color-info">
+                        <div class="color-name">White</div>
+                        <div class="color-codes">
+                            <span>HEX: #FFFFFF</span>
+                            <span>RGB: 255, 255, 255</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin-bottom: 20px; font-weight: 500;">Uso del Color</p>
+
+        <div class="color-usage">
+            <div class="usage-card">
+                <h5>Primario</h5>
+                <div class="usage-bar">
+                    <div style="width: 60%; background: var(--warm-taupe);"></div>
+                    <div style="width: 25%; background: var(--soft-beige);"></div>
+                    <div style="width: 15%; background: var(--charcoal);"></div>
+                </div>
+                <p>Warm Taupe como color dominante. Soft Beige como secundario. Charcoal para acentos y textos.</p>
+            </div>
+            <div class="usage-card">
+                <h5>Digital</h5>
+                <div class="usage-bar">
+                    <div style="width: 50%; background: var(--light-cream);"></div>
+                    <div style="width: 30%; background: var(--warm-taupe);"></div>
+                    <div style="width: 20%; background: var(--charcoal);"></div>
+                </div>
+                <p>Fondos claros predominantes. Taupe para elementos interactivos. Charcoal para texto principal.</p>
+            </div>
+            <div class="usage-card">
+                <h5>Packaging</h5>
+                <div class="usage-bar">
+                    <div style="width: 45%; background: var(--cream);"></div>
+                    <div style="width: 35%; background: var(--warm-taupe);"></div>
+                    <div style="width: 20%; background: var(--dark-brown);"></div>
+                </div>
+                <p>Cream como base del packaging. Taupe para elementos gráficos. Dark Brown para detalles finos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 05. TYPOGRAPHY ========== -->
+    <div class="section typo-section">
+        <div class="section-number">05</div>
+        <div class="section-title">Tipografía</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            El sistema tipográfico de Thelma Clothing combina tres familias que reflejan
+            la dualidad de la marca: la elegancia clásica y la modernidad contemporánea.
+            La armonía entre serif, sans-serif y script define la personalidad visual de la marca.
+        </div>
+
+        <div class="typo-showcase">
+            <div class="typo-family">
+                <div class="typo-family-name">Tipografía Primaria — Cormorant Garamond</div>
+                <div class="typo-sample-large" style="font-family: 'Cormorant Garamond', serif;">La elegancia es una actitud</div>
+                <div class="typo-alphabet" style="font-family: 'Cormorant Garamond', serif;">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </div>
+                <div class="typo-alphabet" style="font-family: 'Cormorant Garamond', serif; font-size: 16px;">
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z &nbsp; 0 1 2 3 4 5 6 7 8 9
+                </div>
+                <div class="typo-weights">
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Cormorant Garamond', serif; font-weight: 300;">Aa</div>
+                        <div class="weight-label">Light 300</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Cormorant Garamond', serif; font-weight: 400;">Aa</div>
+                        <div class="weight-label">Regular 400</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Cormorant Garamond', serif; font-weight: 500;">Aa</div>
+                        <div class="weight-label">Medium 500</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">Aa</div>
+                        <div class="weight-label">SemiBold 600</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Cormorant Garamond', serif; font-style: italic;">Aa</div>
+                        <div class="weight-label">Italic</div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; font-size: 12px; color: var(--dark-brown); font-weight: 300;">
+                    Uso: Títulos principales, subtítulos, encabezados de secciones y elementos editoriales.
+                </div>
+            </div>
+
+            <div class="typo-family">
+                <div class="typo-family-name">Tipografía Secundaria — Montserrat</div>
+                <div class="typo-sample-large" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 36px;">Diseño contemporáneo</div>
+                <div class="typo-alphabet" style="font-family: 'Montserrat', sans-serif; font-weight: 400;">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </div>
+                <div class="typo-alphabet" style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 300;">
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z &nbsp; 0 1 2 3 4 5 6 7 8 9
+                </div>
+                <div class="typo-weights">
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Montserrat', sans-serif; font-weight: 200;">Aa</div>
+                        <div class="weight-label">ExtraLight 200</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Montserrat', sans-serif; font-weight: 300;">Aa</div>
+                        <div class="weight-label">Light 300</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Montserrat', sans-serif; font-weight: 400;">Aa</div>
+                        <div class="weight-label">Regular 400</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Montserrat', sans-serif; font-weight: 500;">Aa</div>
+                        <div class="weight-label">Medium 500</div>
+                    </div>
+                    <div class="typo-weight-item">
+                        <div class="weight-sample" style="font-family: 'Montserrat', sans-serif; font-weight: 600;">Aa</div>
+                        <div class="weight-label">SemiBold 600</div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; font-size: 12px; color: var(--dark-brown); font-weight: 300;">
+                    Uso: Cuerpo de texto, navegación, etiquetas, botones, subtextos y comunicación general.
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin-bottom: 20px; font-weight: 500;">Jerarquía Tipográfica</p>
+
+        <div class="type-hierarchy">
+            <div class="hierarchy-item">
+                <div class="hierarchy-meta">
+                    Título H1<br>
+                    Cormorant Garamond<br>
+                    Regular 400 — 36px
+                </div>
+                <div class="h-title">Colección Otoño Invierno</div>
+            </div>
+            <div class="hierarchy-item">
+                <div class="hierarchy-meta">
+                    Subtítulo H2<br>
+                    Cormorant Garamond<br>
+                    Regular 400 — 26px
+                </div>
+                <div class="h-subtitle">Prendas que definen tu estilo</div>
+            </div>
+            <div class="hierarchy-item">
+                <div class="hierarchy-meta">
+                    Heading H3<br>
+                    Montserrat<br>
+                    Medium 500 — 13px
+                </div>
+                <div class="h-heading">Nueva Temporada Disponible</div>
+            </div>
+            <div class="hierarchy-item">
+                <div class="hierarchy-meta">
+                    Body Text<br>
+                    Montserrat<br>
+                    Light 300 — 14px
+                </div>
+                <div class="h-body">Descubrí prendas diseñadas con atención al detalle, confeccionadas con materiales de primera calidad para acompañarte en cada momento.</div>
+            </div>
+            <div class="hierarchy-item">
+                <div class="hierarchy-meta">
+                    Caption<br>
+                    Montserrat<br>
+                    Light 300 — 11px
+                </div>
+                <div class="h-caption">Fotografía: Colección Primavera 2026 — Thelma Clothing</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 06. INCORRECT USES ========== -->
+    <div class="section incorrect-section">
+        <div class="section-number">06</div>
+        <div class="section-title">Usos Incorrectos</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            Para preservar la integridad de la marca, el logotipo nunca debe ser alterado,
+            distorsionado o aplicado de maneras que comprometan su legibilidad o estética.
+            A continuación se presentan los usos prohibidos.
+        </div>
+
+        <div class="incorrect-grid">
+            <div class="incorrect-card">
+                <div class="incorrect-preview">
+                    <div class="stretched">
+                        <div class="version-mono" style="font-family: 'Great Vibes', cursive; font-size: 50px; color: var(--warm-taupe);">t</div>
+                        <div class="version-text" style="font-family: 'Montserrat'; font-size: 9px; letter-spacing: 4px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    </div>
+                </div>
+                <div class="incorrect-label">No estirar ni distorsionar las proporciones</div>
+            </div>
+            <div class="incorrect-card">
+                <div class="incorrect-preview">
+                    <div class="rotated">
+                        <div class="version-mono" style="font-family: 'Great Vibes', cursive; font-size: 50px; color: var(--warm-taupe);">t</div>
+                        <div class="version-text" style="font-family: 'Montserrat'; font-size: 9px; letter-spacing: 4px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    </div>
+                </div>
+                <div class="incorrect-label">No rotar el logotipo</div>
+            </div>
+            <div class="incorrect-card">
+                <div class="incorrect-preview wrong-color">
+                    <div>
+                        <div class="version-mono" style="font-family: 'Great Vibes', cursive; font-size: 50px;">t</div>
+                        <div class="version-text" style="font-family: 'Montserrat'; font-size: 9px; letter-spacing: 4px; text-transform: uppercase;">Thelma</div>
+                    </div>
+                </div>
+                <div class="incorrect-label">No usar colores fuera de la paleta</div>
+            </div>
+            <div class="incorrect-card">
+                <div class="incorrect-preview low-contrast" style="background: var(--cream);">
+                    <div>
+                        <div class="version-mono" style="font-family: 'Great Vibes', cursive; font-size: 50px;">t</div>
+                        <div class="version-text" style="font-family: 'Montserrat'; font-size: 9px; letter-spacing: 4px; text-transform: uppercase;">Thelma</div>
+                    </div>
+                </div>
+                <div class="incorrect-label">No aplicar sobre fondos de bajo contraste</div>
+            </div>
+            <div class="incorrect-card">
+                <div class="incorrect-preview shadow-effect">
+                    <div>
+                        <div class="version-mono" style="font-family: 'Great Vibes', cursive; font-size: 50px; color: var(--warm-taupe);">t</div>
+                        <div class="version-text" style="font-family: 'Montserrat'; font-size: 9px; letter-spacing: 4px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    </div>
+                </div>
+                <div class="incorrect-label">No agregar sombras ni efectos</div>
+            </div>
+            <div class="incorrect-card">
+                <div class="incorrect-preview outline-effect">
+                    <div>
+                        <div class="version-mono" style="font-family: 'Great Vibes', cursive; font-size: 50px;">t</div>
+                        <div class="version-text" style="font-family: 'Montserrat'; font-size: 9px; letter-spacing: 4px; color: var(--warm-taupe); text-transform: uppercase;">Thelma</div>
+                    </div>
+                </div>
+                <div class="incorrect-label">No usar el logo en outline o contorno</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 07. APPLICATIONS ========== -->
+    <div class="section applications-section">
+        <div class="section-number">07</div>
+        <div class="section-title">Aplicaciones</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            La identidad visual de Thelma Clothing se aplica de forma coherente en todos los
+            puntos de contacto con la clienta. Desde el packaging hasta las redes sociales,
+            cada aplicación refuerza la personalidad de la marca.
+        </div>
+
+        <div class="app-grid">
+            <div class="app-card">
+                <div class="app-preview" style="background: var(--off-white);">
+                    <div class="business-card">
+                        <div class="bc-mono">t</div>
+                        <div class="bc-name">Thelma</div>
+                        <div class="bc-sub">Clothing</div>
+                        <div style="position: absolute; bottom: 20px; text-align: center;">
+                            <div style="font-family: 'Montserrat'; font-size: 6px; letter-spacing: 2px; color: var(--dark-brown); font-weight: 300; line-height: 2;">
+                                www.thelmaclothing.com<br>
+                                @thelma.clothing<br>
+                                +54 11 0000 0000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-info">Tarjeta Personal</div>
+            </div>
+            <div class="app-card">
+                <div class="app-preview" style="background: var(--off-white);">
+                    <div class="hang-tag">
+                        <div class="tag-mono">t</div>
+                        <div class="tag-name">Thelma</div>
+                        <div class="tag-line"></div>
+                        <div class="tag-price">$ 00.000</div>
+                        <div style="margin-top: 10px; font-family: 'Montserrat'; font-size: 6px; letter-spacing: 1px; color: var(--warm-taupe); text-transform: uppercase; font-weight: 300;">
+                            100% Algodón<br>Hecho en Argentina
+                        </div>
+                    </div>
+                </div>
+                <div class="app-info">Etiqueta de Prenda</div>
+            </div>
+            <div class="app-card">
+                <div class="app-preview" style="background: var(--off-white);">
+                    <div class="shopping-bag">
+                        <div class="bag-mono">t</div>
+                        <div class="bag-name">Thelma</div>
+                    </div>
+                </div>
+                <div class="app-info">Bolsa de Compras</div>
+            </div>
+            <div class="app-card">
+                <div class="app-preview" style="background: var(--off-white);">
+                    <div class="social-grid">
+                        <div class="social-circle s1">
+                            <span class="s-mono">t</span>
+                        </div>
+                        <div class="social-circle s2">
+                            <span class="s-mono">t</span>
+                        </div>
+                        <div class="social-circle s3">
+                            <span class="s-mono">t</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-info">Avatares Redes Sociales</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 08. PHOTOGRAPHY ========== -->
+    <div class="section photo-section">
+        <div class="section-number">09</div>
+        <div class="section-title">Estilo Fotográfico</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            La fotografía de Thelma Clothing transmite calidez, naturalidad y elegancia.
+            Las imágenes deben reflejar la esencia de la marca y conectar emocionalmente
+            con la audiencia, manteniendo siempre una estética cohesiva.
+        </div>
+
+        <div class="photo-guidelines">
+            <div class="photo-guideline-card">
+                <h4>Directrices Generales</h4>
+                <ul>
+                    <li>Luz natural cálida, preferentemente hora dorada</li>
+                    <li>Tonalidades neutras y cálidas alineadas a la paleta</li>
+                    <li>Composiciones limpias y equilibradas</li>
+                    <li>Enfoque en texturas y detalles de las prendas</li>
+                    <li>Fondos neutros: crema, beige, piedra natural</li>
+                    <li>Evitar filtros saturados o ediciones agresivas</li>
+                </ul>
+            </div>
+            <div class="photo-guideline-card">
+                <h4>Tipos de Fotografía</h4>
+                <ul>
+                    <li><strong>Lookbook:</strong> Modelo en contexto lifestyle, poses naturales</li>
+                    <li><strong>Still Life:</strong> Prendas dobladas o colgadas, composición cuidada</li>
+                    <li><strong>Detalle:</strong> Close-ups de texturas, costuras y acabados</li>
+                    <li><strong>Ambiente:</strong> Espacios inspiradores afines a la marca</li>
+                    <li><strong>Redes Sociales:</strong> Casual y aspiracional, alineado a la estética</li>
+                </ul>
+            </div>
+            <div class="photo-guideline-card">
+                <h4>Edición y Post-Producción</h4>
+                <ul>
+                    <li>Temperatura de color: cálida (5500K-6500K)</li>
+                    <li>Contraste suave, sombras levantadas</li>
+                    <li>Saturación reducida en tonos fríos</li>
+                    <li>Highlights suaves, sin blancos quemados</li>
+                    <li>Grano sutil para texturas orgánicas</li>
+                </ul>
+            </div>
+            <div class="photo-guideline-card">
+                <h4>Evitar</h4>
+                <ul>
+                    <li>Fondos muy coloridos o distractores</li>
+                    <li>Iluminación dura con sombras marcadas</li>
+                    <li>Filtros que alteren la paleta de marca</li>
+                    <li>Imágenes de baja resolución o pixeladas</li>
+                    <li>Composiciones sobrecargadas o desordenadas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 10. TONE OF VOICE ========== -->
+    <div class="section tone-section">
+        <div class="section-number">10</div>
+        <div class="section-title">Tono de Voz</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            La voz de Thelma Clothing es cálida, cercana y sofisticada. Hablamos con confianza
+            pero sin arrogancia, inspiramos sin imponer, y creamos una conexión genuina con
+            nuestra comunidad. Nuestro tono varía según el canal, pero la esencia permanece.
+        </div>
+
+        <div class="tone-grid">
+            <div class="tone-card do-card">
+                <h5>Sí — Así Hablamos</h5>
+                <div class="tone-example">"Descubrí la nueva colección pensada para acompañarte en cada momento."</div>
+                <div class="tone-example">"Prendas que hablan de vos, sin decir una palabra."</div>
+                <div class="tone-example">"Elegancia que se siente, estilo que perdura."</div>
+                <div class="tone-example">"Tu estilo, tu esencia. Nosotras solo lo acompañamos."</div>
+            </div>
+            <div class="tone-card dont-card">
+                <h5>No — Evitamos Esto</h5>
+                <div class="tone-example">"OFERTAS IMPERDIBLES!! COMPRÁ YA!!"</div>
+                <div class="tone-example">"La mejor ropa al precio más bajo del mercado."</div>
+                <div class="tone-example">"Si no usás Thelma, no sabés de moda."</div>
+                <div class="tone-example">"Apurate que se agotan!! Últimas unidades!!"</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin-bottom: 20px; font-weight: 500;">Pilares de Comunicación</p>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="icon">I</div>
+                    <h5>Cercanía</h5>
+                    <p>Hablamos como una amiga que entiende tu estilo</p>
+                </div>
+                <div class="value-item">
+                    <div class="icon">II</div>
+                    <h5>Inspiración</h5>
+                    <p>Motivamos a descubrir y expresar la propia identidad</p>
+                </div>
+                <div class="value-item">
+                    <div class="icon">III</div>
+                    <h5>Sofisticación</h5>
+                    <p>Comunicación cuidada, nunca agresiva o invasiva</p>
+                </div>
+                <div class="value-item">
+                    <div class="icon">IV</div>
+                    <h5>Autenticidad</h5>
+                    <p>Transparencia y honestidad en cada mensaje</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 11. SOCIAL MEDIA — INSTAGRAM LAYOUT ========== -->
+    <div class="section social-section">
+        <div class="section-number">11</div>
+        <div class="section-title">Redes Sociales</div>
+        <div class="section-line"></div>
+        <div class="section-text">
+            La presencia digital de Thelma Clothing mantiene la coherencia visual de la marca
+            adaptada a cada plataforma. Las publicaciones deben respetar la paleta cromática,
+            la tipografía y el tono de voz definidos en este manual.
+        </div>
+
+        <div class="ig-layout">
+
+            <!-- ===== LEFT COLUMN — Floating Posts ===== -->
+            <div class="ig-float-col">
+                <!-- Card 1: Moodboard -->
+                <div class="ig-float-card">
+                    <div class="ig-float-header">
+                        <div class="ig-float-avatar"><span>t</span></div>
+                        <div>
+                            <div class="ig-float-user">thelma.clothing</div>
+                            <div class="ig-float-sub">Inspiración</div>
+                        </div>
+                    </div>
+                    <div class="ig-float-body" style="background: var(--light-cream);">
+                        <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; color: rgba(168,154,138,0.25); font-style: italic; letter-spacing: 4px;">inspiración</div>
+                    </div>
+                    <div class="ig-float-footer">
+                        <div class="ig-float-title">Moodboard</div>
+                        <div class="ig-float-likes">89 Me gusta</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== CENTER — Phone Mockup ===== -->
+            <div class="ig-phone">
+                <div class="ig-phone-notch"></div>
+
+                <div class="ig-topbar">
+                    <div class="ig-topbar-user">
+                        thelma.clothing
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="ig-topbar-icons">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    </div>
+                </div>
+
+                <div class="ig-profile">
+                    <div class="ig-profile-top">
+                        <div class="ig-avatar"><span>t</span></div>
+                        <div class="ig-stats">
+                            <div class="ig-stat"><div class="ig-stat-num">248</div><div class="ig-stat-label">posts</div></div>
+                            <div class="ig-stat"><div class="ig-stat-num">12.4k</div><div class="ig-stat-label">seguidores</div></div>
+                            <div class="ig-stat"><div class="ig-stat-num">847</div><div class="ig-stat-label">seguidos</div></div>
+                        </div>
+                    </div>
+                    <div class="ig-bio">
+                        <div class="ig-bio-name">Thelma Clothing</div>
+                        <div class="ig-bio-cat">Tienda de ropa</div>
+                        <div class="ig-bio-text">Elegancia que se siente, estilo que perdura.<br>Nueva colección Otoño Invierno 2026</div>
+                        <div class="ig-bio-link">www.thelmaclothing.com</div>
+                    </div>
+                </div>
+
+                <div class="ig-buttons">
+                    <div class="ig-btn ig-btn-primary">Seguir</div>
+                    <div class="ig-btn ig-btn-secondary">Mensaje</div>
+                </div>
+
+                <div class="ig-highlights">
+                    <div class="ig-highlight"><div class="ig-highlight-circle hl1"><span class="hl-icon">&#10022;</span></div><div class="ig-highlight-label">New In</div></div>
+                    <div class="ig-highlight"><div class="ig-highlight-circle hl2"><span style="font-family:'Great Vibes',cursive;font-size:20px;color:var(--warm-taupe);">t</span></div><div class="ig-highlight-label">Brand</div></div>
+                    <div class="ig-highlight"><div class="ig-highlight-circle hl3"><span class="hl-icon">&#9825;</span></div><div class="ig-highlight-label">Favoritos</div></div>
+                    <div class="ig-highlight"><div class="ig-highlight-circle hl4"><span class="hl-icon">&#9733;</span></div><div class="ig-highlight-label">Tips</div></div>
+                </div>
+
+                <div class="ig-tabs">
+                    <div class="ig-tab active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+                    <div class="ig-tab inactive"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                </div>
+
+                <!-- Feed Grid -->
+                <div class="ig-grid">
+                    <div class="ig-post p1"></div>
+                    <div class="ig-post p7"></div>
+                    <div class="ig-post p3"></div>
+                    <div class="ig-post p2"></div>
+                    <div class="ig-post p5"></div>
+                    <div class="ig-post p4"></div>
+                    <div class="ig-post p7"></div>
+                    <div class="ig-post p6"></div>
+                    <div class="ig-post p1"></div>
+                    <div class="ig-post p4"></div>
+                    <div class="ig-post p8"></div>
+                    <div class="ig-post p9"></div>
+                </div>
+
+                <div class="ig-bottomnav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <div class="ig-bottomnav-avatar"></div>
+                </div>
+
+                <div class="ig-phone-bar"></div>
+            </div>
+
+            <!-- ===== RIGHT COLUMN — Floating Posts ===== -->
+            <div class="ig-float-col">
+                <!-- Card 3: Detalles -->
+                <div class="ig-float-card">
+                    <div class="ig-float-header">
+                        <div class="ig-float-avatar"><span>t</span></div>
+                        <div>
+                            <div class="ig-float-user">thelma.clothing</div>
+                            <div class="ig-float-sub">Detalles constructivos</div>
+                        </div>
+                    </div>
+                    <div class="ig-float-body" style="background: linear-gradient(160deg, var(--cream) 0%, var(--soft-beige) 40%, var(--warm-taupe) 100%);">
+                    </div>
+                    <div class="ig-float-footer">
+                        <div class="ig-float-title">Detalles</div>
+                        <div class="ig-float-likes">203 Me gusta</div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Proyecto Destacado -->
+                <div class="ig-float-card">
+                    <div class="ig-float-header">
+                        <div class="ig-float-avatar"><span>t</span></div>
+                        <div>
+                            <div class="ig-float-user">thelma.clothing</div>
+                            <div class="ig-float-sub">Pieza destacada</div>
+                        </div>
+                    </div>
+                    <div class="ig-float-body" style="background: var(--charcoal);">
+                        <div style="padding: 30px; text-align: left; width: 100%;">
+                            <div style="font-family:'Montserrat';font-size:8px;color:var(--warm-taupe);margin-bottom:30px;">01</div>
+                            <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--cream);line-height:1.2;">Colección<br>Otoño Invierno.</div>
+                            <div style="font-family:'Montserrat';font-size:9px;color:var(--warm-taupe);margin-top:12px;font-weight:300;letter-spacing:1px;">12 piezas · Edición limitada · 2026</div>
+                        </div>
+                    </div>
+                    <div class="ig-float-footer">
+                        <div class="ig-float-title">Pieza Destacada</div>
+                        <div class="ig-float-likes">312 Me gusta</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Guidelines -->
+        <div class="ig-guidelines">
+            <p style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm-taupe); margin-bottom: 20px; font-weight: 500;">Directrices para Redes</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div>
+                    <h5 style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Instagram Feed</h5>
+                    <p style="font-size: 12px; font-weight: 300; line-height: 1.8;">
+                        Grilla armónica alternando fotos de producto, lifestyle y gráficas tipográficas.
+                        Ritmo visual: gráfica — foto — gráfica. Predominio de tonos cálidos.
+                    </p>
+                </div>
+                <div>
+                    <h5 style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Stories & Highlights</h5>
+                    <p style="font-size: 12px; font-weight: 300; line-height: 1.8;">
+                        Contenido espontáneo alineado a la paleta. Portadas de highlights
+                        con fondo Cream y el isotipo en Warm Taupe.
+                    </p>
+                </div>
+                <div>
+                    <h5 style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500;">Tipos de Post</h5>
+                    <p style="font-size: 12px; font-weight: 300; line-height: 1.8;">
+                        Lanzamientos, frases, detrás de escena, promociones, carruseles
+                        editoriales y paletas de temporada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <div class="footer">
+        <div class="f-mono">t</div>
+        <div class="f-name">Thelma Clothing</div>
+        <div class="f-line"></div>
+        <div class="f-copy">
+            Manual de Identidad de Marca &copy; 2026<br>
+            <span style="font-size: 10px; letter-spacing: 2px;">Todos los derechos reservados</span>
+        </div>
+    </div>
+
+</body>
+</html>

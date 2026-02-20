@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Identidad Visual — CO_ Arquitectura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Lora:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__logo">
+            <div class="nav__co-wrap">
+                <span class="nav__co">CO</span>
+                <span class="nav__underscore"></span>
+            </div>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#portada" data-section="1">Portada</a></li>
+            <li><a href="#filosofia" data-section="2">Filosofía</a></li>
+            <li><a href="#personalidad" data-section="3">Personalidad</a></li>
+            <li><a href="#logotipo" data-section="4">Logotipo</a></li>
+            <li><a href="#proteccion" data-section="5">Protección</a></li>
+            <li><a href="#usos" data-section="6">Usos</a></li>
+            <li><a href="#colores" data-section="7">Colores</a></li>
+            <li><a href="#tipografia-principal" data-section="8">Tipografía</a></li>
+            <li><a href="#tipografia-secundaria" data-section="9">Serif</a></li>
+            <li><a href="#tipografia-apoyo" data-section="10">Mono</a></li>
+            <li><a href="#fotografia" data-section="11">Fotografía</a></li>
+            <li><a href="#digital" data-section="12">Digital</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page indicator -->
+    <div class="page-indicator" id="pageIndicator">
+        <span class="page-indicator__current">01</span>
+        <span class="page-indicator__separator">/</span>
+        <span class="page-indicator__total">12</span>
+    </div>
+
+    <!-- ===================== SECCIÓN 1: INTRODUCCIÓN Y ESENCIA ===================== -->
+
+    <!-- Pág 1: Portada -->
+    <section class="page page--cover" id="portada" data-page="1">
+        <div class="page__content page__content--centered">
+            <div class="cover__logo">
+                <div class="cover__co-wrap">
+                    <span class="cover__co"><span class="cover__c" id="coverC">C</span>O</span>
+                    <div class="cover__underscore" id="coverUnderscore"></div>
+                </div>
+                <div class="cover__tagline">ARQUITECTURA QUE ACOMPAÑA</div>
+            </div>
+            <div class="cover__title">
+                <h1 class="cover__heading">MANUAL DE IDENTIDAD VISUAL</h1>
+            </div>
+        </div>
+        <div class="page__number">Pág. 01</div>
+    </section>
+
+    <!-- Pág 2: Filosofía -->
+    <section class="page page--filosofia" id="filosofia" data-page="2">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 1 — INTRODUCCIÓN Y ESENCIA</div>
+            <h2 class="page__title">EL PROPÓSITO:<br>ARQUITECTURA QUE ACOMPAÑA</h2>
+            <div class="filosofia__grid">
+                <div class="filosofia__text">
+                    <p class="body-serif">
+                        En <strong class="highlight-co">CO_ Arquitectura</strong> creemos en el potencial oculto. Ese valor latente en cada espacio, cada estructura con historia. Nuestra misión es acompañar ese viaje de transformación, desde la primera <span class="keyword-highlight">chispa</span> de una idea hasta la materialización de un <span class="keyword-highlight">hogar</span> renovado o una inversión revalorizada.
+                    </p>
+                    <div class="spacer--md"></div>
+                    <p class="body-serif">
+                        Acompañamos procesos de <span class="keyword-highlight">reciclaje y renovación de departamentos existentes</span>, convirtiendo unidades sin funcionalidad o estética en espacios contemporáneos, habitables y vendibles. Trabajamos con una mirada <span class="keyword-highlight">práctica y sensible</span> a la vez: decisiones de diseño que mejoran el uso diario, elevan la experiencia del espacio y sostienen el valor de la inversión.
+                    </p>
+                    <div class="spacer--md"></div>
+                    <p class="body-serif">
+                        También desarrollamos propuestas de arquitectura interior para oficinas y comercios, con soluciones <span class="keyword-highlight">claras y coherentes</span>, pensadas para el funcionamiento real y para la identidad de cada proyecto. En cada obra buscamos lo mismo: orden, simpleza y una estética que no sea decorativa, sino <span class="keyword-highlight">significativa</span>.
+                    </p>
+                    <div class="spacer--md"></div>
+                    <p class="body-serif">
+                        Nuestro "Co" es una manera de hacer. Co como compañía y confianza. Co como compromiso y coherencia. Co como conversar, conectar y construir en equipo. Acompañamos para que el proceso sea transparente, disfrutable y sólido, y para que cada transformación tenga sentido más allá de lo visual.
+                    </p>
+                </div>
+                <div class="filosofia__visual">
+                    <div class="co-anim" id="coAnim">
+                        <div class="co-scroll" id="coScroll">
+                            <div class="co-scroll__word"><span class="co-scroll__co">CO</span>MPAÑÍA</div>
+                            <div class="co-scroll__word"><span class="co-scroll__co">CO</span>MPARTIR</div>
+                            <div class="co-scroll__word"><span class="co-scroll__co">CO</span>NFIANZA</div>
+                            <div class="co-scroll__word"><span class="co-scroll__co">CO</span>RDOBA</div>
+                            <div class="co-scroll__word"><span class="co-scroll__co">CO</span>OPERAR</div>
+                        </div>
+                        <div class="co-scroll__final" id="coFinal">
+                            <span class="co-scroll__final-c">C</span>O
+                            <div class="co-anim__underscore" id="coAnimLine"></div>
+                        </div>
+                        <div class="co-anim__tagline" id="coAnimTagline">ARQUITECTURA QUE ACOMPAÑA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 02</div>
+    </section>
+
+    <!-- Pág 3: Personalidad de Marca -->
+    <section class="page page--personalidad" id="personalidad" data-page="3">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 1 — INTRODUCCIÓN Y ESENCIA</div>
+            <h2 class="page__title">LA VOZ DE CO_:<br>NATURAL, MODERNO, CERCANO</h2>
+            <div class="personalidad__grid">
+                <div class="personalidad__col">
+                    <div class="trait trait--oliva">
+                        <div class="trait__icon">01</div>
+                        <h3 class="trait__name">NATURAL</h3>
+                        <p class="trait__desc body-serif">Inspiración en materiales nobles, luz, funcionalidad. Comunicación honesta y transparente.</p>
+                        <div class="trait__bar"></div>
+                    </div>
+                    <div class="trait trait--grafito">
+                        <div class="trait__icon">02</div>
+                        <h3 class="trait__name">MODERNO</h3>
+                        <p class="trait__desc body-serif">Visión innovadora, soluciones estéticas y prácticas. Lenguaje claro, preciso y actualizado.</p>
+                        <div class="trait__bar"></div>
+                    </div>
+                    <div class="trait trait--bordo">
+                        <div class="trait__icon">03</div>
+                        <h3 class="trait__name">CERCANO</h3>
+                        <p class="trait__desc body-serif">Empatía con el cliente, comprensión de sus objetivos (estéticos, de inversión). Un lenguaje cálido, facilitador y accesible, evitando la jerga técnica excesiva.</p>
+                        <div class="trait__bar"></div>
+                    </div>
+                </div>
+                <div class="personalidad__col">
+                    <div class="tono-box">
+                        <div class="tono-box__accent"></div>
+                        <h4 class="tono-box__title">TONO DE VOZ</h4>
+                        <p class="body-serif">Profesional, seguro y didáctico. Transmite conocimiento sin ser distante. Busca generar confianza y entusiasmo por el proceso de transformación.</p>
+                        <div class="tono-box__colors">
+                            <span class="tono-dot" style="background: var(--oliva)" title="Oliva"></span>
+                            <span class="tono-dot" style="background: var(--bordo)" title="Bordó"></span>
+                            <span class="tono-dot" style="background: var(--grafito-oscuro)" title="Grafito"></span>
+                            <span class="tono-dot" style="background: var(--gris-cemento)" title="Cemento"></span>
+                            <span class="tono-dot" style="background: var(--crema)" title="Crema"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 03</div>
+    </section>
+
+    <!-- ===================== SECCIÓN 2: LOGOTIPO Y SISTEMA ===================== -->
+
+    <!-- Pág 4: Construcción del Logotipo -->
+    <section class="page page--logotipo" id="logotipo" data-page="4">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 2 — LOGOTIPO Y SISTEMA</div>
+            <h2 class="page__title">EL LOGOTIPO:<br>ESTRUCTURA Y CARÁCTER</h2>
+            <div class="logotipo__showcase">
+                <div class="logotipo__main">
+                    <div class="logotipo__grid-bg">
+                        <div class="logo logo--showcase">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-showcase">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <!-- Grid lines -->
+                        <svg class="iso-grid" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid meet">
+                            <defs>
+                                <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                                    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#B6B5B5" stroke-width="0.5" opacity="0.3"/>
+                                </pattern>
+                            </defs>
+                            <rect width="600" height="300" fill="url(#gridPattern)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="logotipo__analysis">
+                <div class="analysis-item">
+                    <div class="analysis-item__icon">
+                        <div class="bar-symbol"></div>
+                    </div>
+                    <p class="body-serif">El guión bajo <strong>_</strong> representa la base, el cimiento. Es la línea horizontal que ancla las letras CO al suelo, como los fundamentos de toda construcción sólida.</p>
+                </div>
+                <div class="analysis-item">
+                    <div class="analysis-item__icon">
+                        <div class="module-symbol"></div>
+                    </div>
+                    <p class="body-serif">La tipografía bold ultra-gruesa de <strong>CO</strong> comunica solidez, presencia y confianza. La simplicidad de solo dos letras crea un símbolo memorable e inmediato.</p>
+                </div>
+            </div>
+            <!-- Logo variations -->
+            <div class="logotipo__variations">
+                <h3 class="subsection-title">Variantes de Color</h3>
+                <div class="logo-variants__grid">
+                    <div class="logo-variant logo-variant--oliva">
+                        <div class="logo logo--variant">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-variant">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <span class="variant-label mono">Oliva Arquitectónico</span>
+                    </div>
+                    <div class="logo-variant logo-variant--negro">
+                        <div class="logo logo--variant">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-variant">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <span class="variant-label mono">Negro Principal</span>
+                    </div>
+                    <div class="logo-variant logo-variant--bordo">
+                        <div class="logo logo--variant">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-variant">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <span class="variant-label mono">Bordó Ladrillo</span>
+                    </div>
+                    <div class="logo-variant logo-variant--gris">
+                        <div class="logo logo--variant">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-variant">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <span class="variant-label mono">Gris Hormigón</span>
+                    </div>
+                    <div class="logo-variant logo-variant--oscuro">
+                        <div class="logo logo--variant">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-variant">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <span class="variant-label mono">Grafito Oscuro</span>
+                    </div>
+                    <div class="logo-variant logo-variant--blanco">
+                        <div class="logo logo--variant">
+                            <span class="logo__co">CO</span>
+                            <span class="logo__underscore"></span>
+                        </div>
+                        <span class="logo__tagline-variant">ARQUITECTURA QUE ACOMPAÑA</span>
+                        <span class="variant-label mono">Negativo / Blanco</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 04</div>
+    </section>
+
+    <!-- Pág 5: Área de Protección -->
+    <section class="page page--proteccion" id="proteccion" data-page="5">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 2 — LOGOTIPO Y SISTEMA</div>
+            <h2 class="page__title">ÁREA DE PROTECCIÓN<br>Y REDUCCIÓN MÍNIMA</h2>
+            <div class="proteccion__grid">
+                <div class="proteccion__area">
+                    <h3 class="subsection-title">Área de Protección</h3>
+                    <div class="protection-demo">
+                        <div class="protection-demo__box">
+                            <div class="protection-demo__margin protection-demo__margin--top">
+                                <span class="mono protection-demo__label">x</span>
+                            </div>
+                            <div class="protection-demo__margin protection-demo__margin--right">
+                                <span class="mono protection-demo__label">x</span>
+                            </div>
+                            <div class="protection-demo__margin protection-demo__margin--bottom">
+                                <span class="mono protection-demo__label">x</span>
+                            </div>
+                            <div class="protection-demo__margin protection-demo__margin--left">
+                                <span class="mono protection-demo__label">x</span>
+                            </div>
+                            <div class="logo logo--protection">
+                                <span class="logo__co">CO</span>
+                                <span class="logo__underscore"></span>
+                            </div>
+                        </div>
+                        <p class="protection-note mono">x = altura de la letra "O" en "CO"</p>
+                    </div>
+                </div>
+                <div class="proteccion__minimo">
+                    <h3 class="subsection-title">Tamaño Mínimo</h3>
+                    <div class="min-size-demos">
+                        <div class="min-size-demo">
+                            <div class="logo logo--min-print">
+                                <span class="logo__co">CO</span>
+                                <span class="logo__underscore"></span>
+                            </div>
+                            <span class="mono min-size-label">Impresión: 12mm ancho</span>
+                        </div>
+                        <div class="min-size-demo">
+                            <div class="logo logo--min-digital">
+                                <span class="logo__co">CO</span>
+                                <span class="logo__underscore"></span>
+                            </div>
+                            <span class="mono min-size-label">Digital: 48px ancho</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 05</div>
+    </section>
+
+    <!-- Pág 6: Usos Correctos e Incorrectos -->
+    <section class="page page--usos" id="usos" data-page="6">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 2 — LOGOTIPO Y SISTEMA</div>
+            <h2 class="page__title">USOS DEL LOGOTIPO:<br>CLARIDAD Y CONSISTENCIA</h2>
+            <div class="usos__grid">
+                <div class="usos__col usos__col--do">
+                    <h3 class="usos__heading usos__heading--do">Usos Correctos</h3>
+                    <div class="uso-example uso-example--correct">
+                        <div class="uso-example__preview uso-example__preview--white">
+                            <div class="uso-logo uso-logo--negro">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                                <span class="uso-logo__tag">ARQUITECTURA QUE ACOMPAÑA</span>
+                            </div>
+                        </div>
+                        <span class="uso-example__caption mono">Sobre fondo blanco — Negro principal</span>
+                    </div>
+                    <div class="uso-example uso-example--correct">
+                        <div class="uso-example__preview uso-example__preview--grey">
+                            <div class="uso-logo uso-logo--oliva">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                                <span class="uso-logo__tag">ARQUITECTURA QUE ACOMPAÑA</span>
+                            </div>
+                        </div>
+                        <span class="uso-example__caption mono">Sobre fondo gris — Oliva arquitectónico</span>
+                    </div>
+                    <div class="uso-example uso-example--correct">
+                        <div class="uso-example__preview uso-example__preview--dark">
+                            <div class="uso-logo uso-logo--blanco">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                                <span class="uso-logo__tag">ARQUITECTURA QUE ACOMPAÑA</span>
+                            </div>
+                        </div>
+                        <span class="uso-example__caption mono">Negativo sobre fondo oscuro</span>
+                    </div>
+                    <div class="uso-example uso-example--correct">
+                        <div class="uso-example__preview uso-example__preview--cream">
+                            <div class="uso-logo uso-logo--bordo">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                                <span class="uso-logo__tag">ARQUITECTURA QUE ACOMPAÑA</span>
+                            </div>
+                        </div>
+                        <span class="uso-example__caption mono">Sobre fondo crema — Bordó ladrillo</span>
+                    </div>
+                </div>
+                <div class="usos__col usos__col--dont">
+                    <h3 class="usos__heading usos__heading--dont">Usos Incorrectos</h3>
+                    <div class="uso-example uso-example--incorrect">
+                        <div class="uso-example__preview uso-example__preview--white">
+                            <div class="uso-logo uso-logo--negro uso-logo--stretched">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                            </div>
+                            <div class="uso-example__cross"></div>
+                        </div>
+                        <span class="uso-example__caption mono">No estirar ni comprimir</span>
+                    </div>
+                    <div class="uso-example uso-example--incorrect">
+                        <div class="uso-example__preview uso-example__preview--white">
+                            <div class="uso-logo uso-logo--negro uso-logo--rotated">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                            </div>
+                            <div class="uso-example__cross"></div>
+                        </div>
+                        <span class="uso-example__caption mono">No rotar el logotipo</span>
+                    </div>
+                    <div class="uso-example uso-example--incorrect">
+                        <div class="uso-example__preview uso-example__preview--white">
+                            <div class="uso-logo uso-logo--negro uso-logo--shadow">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                            </div>
+                            <div class="uso-example__cross"></div>
+                        </div>
+                        <span class="uso-example__caption mono">No aplicar sombras ni efectos 3D</span>
+                    </div>
+                    <div class="uso-example uso-example--incorrect">
+                        <div class="uso-example__preview uso-example__preview--gradient">
+                            <div class="uso-logo uso-logo--negro">
+                                <span class="uso-logo__co">CO</span>
+                                <span class="uso-logo__line"></span>
+                            </div>
+                            <div class="uso-example__cross"></div>
+                        </div>
+                        <span class="uso-example__caption mono">No usar sobre fondos con gradientes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 06</div>
+    </section>
+
+    <!-- ===================== SECCIÓN 3: COLOR Y TIPOGRAFÍA ===================== -->
+
+    <!-- Pág 7: Paleta de Colores -->
+    <section class="page page--colores" id="colores" data-page="7">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 3 — COLOR Y TIPOGRAFÍA</div>
+            <h2 class="page__title">PALETA DE COLORES:<br>MATERIALIDAD Y CARÁCTER</h2>
+            <div class="colores__section">
+                <h3 class="subsection-title">Colores de Marca</h3>
+                <div class="color-swatches color-swatches--brand">
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #3C3A2E;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Oliva Arquitectónico</span>
+                            <span class="swatch__hex mono">#3C3A2E</span>
+                            <span class="swatch__desc">Materialidad, tierra, organicidad</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #1A1A1A;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Negro Absoluto</span>
+                            <span class="swatch__hex mono">#1A1A1A</span>
+                            <span class="swatch__desc">Solidez, presencia, autoridad</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #5C2A2A;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Bordó Ladrillo</span>
+                            <span class="swatch__hex mono">#5C2A2A</span>
+                            <span class="swatch__desc">Calidez, ladrillo, tradición</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #8A8A85;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Gris Cemento</span>
+                            <span class="swatch__hex mono">#8A8A85</span>
+                            <span class="swatch__desc">Hormigón, neutralidad, equilibrio</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #3D3D3B;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Grafito Oscuro</span>
+                            <span class="swatch__hex mono">#3D3D3B</span>
+                            <span class="swatch__desc">Profundidad, sofisticación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colores__section">
+                <h3 class="subsection-title">Neutros Base</h3>
+                <div class="color-swatches">
+                    <div class="swatch">
+                        <div class="swatch__block swatch__block--border" style="background-color: #FFFFFF;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Blanco Puro</span>
+                            <span class="swatch__hex mono">#FFFFFF</span>
+                            <span class="swatch__desc">Espacialidad, amplitud</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block swatch__block--border" style="background-color: #F5F3EF;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Crema Arena</span>
+                            <span class="swatch__hex mono">#F5F3EF</span>
+                            <span class="swatch__desc">Calidez, papel, lienzo</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #D9D0D0;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Gris Hormigón</span>
+                            <span class="swatch__hex mono">#D9D0D0</span>
+                            <span class="swatch__desc">Estabilidad, modernidad</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch__block" style="background-color: #B6B5B5;"></div>
+                        <div class="swatch__info">
+                            <span class="swatch__name">Gris Piedra</span>
+                            <span class="swatch__hex mono">#B6B5B5</span>
+                            <span class="swatch__desc">Sombra, profundidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colores__proporcion">
+                <h3 class="subsection-title">Proporción de Uso Recomendada</h3>
+                <div class="proportion-bar">
+                    <div class="proportion-bar__segment" style="width: 45%; background-color: #F5F3EF;" title="Crema Arena">
+                        <span class="proportion-bar__label">45%</span>
+                    </div>
+                    <div class="proportion-bar__segment" style="width: 20%; background-color: #D9D0D0;" title="Gris Hormigón">
+                        <span class="proportion-bar__label">20%</span>
+                    </div>
+                    <div class="proportion-bar__segment" style="width: 15%; background-color: #1A1A1A; color: #fff;" title="Negro Absoluto">
+                        <span class="proportion-bar__label">15%</span>
+                    </div>
+                    <div class="proportion-bar__segment" style="width: 10%; background-color: #3C3A2E; color: #fff;" title="Oliva">
+                        <span class="proportion-bar__label mono" style="font-size: 0.6rem;">10%</span>
+                    </div>
+                    <div class="proportion-bar__segment" style="width: 10%; background-color: #5C2A2A; color: #fff;" title="Bordó">
+                        <span class="proportion-bar__label mono" style="font-size: 0.6rem;">10%</span>
+                    </div>
+                </div>
+                <div class="proportion-legend">
+                    <span class="mono">Crema Arena 45%</span>
+                    <span class="mono">Gris Hormigón 20%</span>
+                    <span class="mono">Negro Absoluto 15%</span>
+                    <span class="mono">Oliva 10%</span>
+                    <span class="mono">Bordó 10%</span>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 07</div>
+    </section>
+
+    <!-- Pág 8: Tipografía Principal -->
+    <section class="page page--tipografia" id="tipografia-principal" data-page="8">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 3 — COLOR Y TIPOGRAFÍA</div>
+            <h2 class="page__title">TIPOGRAFÍA PRINCIPAL:<br>INTER <span class="page__title-note">(Helvetica Neue)</span></h2>
+            <p class="body-serif page__intro">Uso de Inter (alternativa de licencia abierta a Helvetica Neue) por su claridad y atemporalidad. Para títulos, subtítulos y encabezados de sección.</p>
+            <div class="tipo__showcase">
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Light — 300</span>
+                    <p class="tipo__sample tipo__sample--light">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+                    <p class="tipo__example tipo__example--light">Detalles finos, datos complementarios</p>
+                </div>
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Regular — 400</span>
+                    <p class="tipo__sample tipo__sample--regular">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+                    <p class="tipo__example tipo__example--regular">Subtítulos, introducciones, navegación</p>
+                </div>
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Black — 900</span>
+                    <p class="tipo__sample tipo__sample--black">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+                    <p class="tipo__example tipo__example--bold">TÍTULOS PRINCIPALES, LOGOTIPO CO_</p>
+                </div>
+            </div>
+            <div class="tipo__hierarchy">
+                <h3 class="subsection-title">Jerarquía Tipográfica</h3>
+                <div class="hierarchy-demo">
+                    <p class="hierarchy-demo__h1">H1 — Título Principal</p>
+                    <p class="hierarchy-demo__h2">H2 — Subtítulo de Sección</p>
+                    <p class="hierarchy-demo__h3">H3 — Encabezado Interno</p>
+                    <p class="hierarchy-demo__body">Body — Texto de navegación y UI</p>
+                    <p class="hierarchy-demo__caption">Caption — Textos auxiliares y etiquetas</p>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 08</div>
+    </section>
+
+    <!-- Pág 9: Tipografía Secundaria -->
+    <section class="page page--tipografia-sec" id="tipografia-secundaria" data-page="9">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 3 — COLOR Y TIPOGRAFÍA</div>
+            <h2 class="page__title">TIPOGRAFÍA SECUNDARIA:<br>LORA</h2>
+            <p class="body-serif page__intro">Serif de remates finos para aportar calidez y legibilidad a los textos largos. Ideal para la narrativa de los proyectos de transformación.</p>
+            <div class="tipo__showcase tipo__showcase--serif">
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Regular — 400</span>
+                    <p class="tipo__sample-serif tipo__sample-serif--regular">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+                    <p class="tipo__use-serif">Párrafos de contenido, descripciones de proyectos</p>
+                </div>
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Italic — 400i</span>
+                    <p class="tipo__sample-serif tipo__sample-serif--italic">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+                    <p class="tipo__use-serif" style="font-style: italic;">"Citas, énfasis, fragmentos inspiradores"</p>
+                </div>
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Bold — 700</span>
+                    <p class="tipo__sample-serif tipo__sample-serif--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+                    <p class="tipo__use-serif" style="font-weight: 700;">Destacados dentro del texto editorial</p>
+                </div>
+            </div>
+            <div class="tipo__example-block">
+                <h3 class="subsection-title">Ejemplo de Uso Editorial</h3>
+                <div class="editorial-sample">
+                    <p class="editorial-sample__text">El edificio de la calle Güemes, construido en 1948, conservaba los huesos de una arquitectura noble: techos altos de 3.20m, pisos de pinotea originales y carpinterías de cedro que, bajo capas de pintura, guardaban un carácter irrepetible. <em>La intervención buscó revelar esa esencia, no ocultarla.</em> <strong>Cada decisión de diseño fue un diálogo entre lo que el espacio ya era y lo que podía llegar a ser.</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 09</div>
+    </section>
+
+    <!-- Pág 10: Tipografía de Apoyo -->
+    <section class="page page--tipografia-mono" id="tipografia-apoyo" data-page="10">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 3 — COLOR Y TIPOGRAFÍA</div>
+            <h2 class="page__title">TIPOGRAFÍA DE APOYO:<br>JETBRAINS MONO <span class="page__title-note">(Cascadia Mono)</span></h2>
+            <p class="body-serif page__intro">Fuente monoespaciada para la precisión de datos técnicos y la evocación de planos arquitectónicos o códigos de programación.</p>
+            <div class="tipo__showcase tipo__showcase--mono">
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Regular — 400</span>
+                    <p class="tipo__sample-mono">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 !@#$%^&*()</p>
+                </div>
+                <div class="tipo__weight">
+                    <span class="tipo__weight-label mono">Bold — 700</span>
+                    <p class="tipo__sample-mono tipo__sample-mono--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 !@#$%^&*()</p>
+                </div>
+            </div>
+            <div class="mono-examples">
+                <h3 class="subsection-title">Aplicaciones Técnicas</h3>
+                <div class="mono-examples__grid">
+                    <div class="mono-example">
+                        <span class="mono-example__label">Fecha y Referencia</span>
+                        <span class="mono-example__value">25.03.2024 — ID_PROYECTO_007</span>
+                    </div>
+                    <div class="mono-example">
+                        <span class="mono-example__label">Dimensiones</span>
+                        <span class="mono-example__value">AMBIENTE: 4.20m × 3.80m × 3.20m</span>
+                    </div>
+                    <div class="mono-example">
+                        <span class="mono-example__label">Presupuesto</span>
+                        <span class="mono-example__value mono-example__value--accent">TOTAL: $12.850.000</span>
+                    </div>
+                    <div class="mono-example">
+                        <span class="mono-example__label">Pie de Foto</span>
+                        <span class="mono-example__value">Cocina — Etapa 3 de 5 — 78% avance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blueprint-accent">
+                <svg viewBox="0 0 200 100" class="blueprint-svg">
+                    <rect x="10" y="10" width="80" height="60" fill="none" stroke="#8A8A85" stroke-width="0.5"/>
+                    <rect x="110" y="10" width="80" height="60" fill="none" stroke="#8A8A85" stroke-width="0.5"/>
+                    <line x1="50" y1="10" x2="50" y2="70" stroke="#8A8A85" stroke-width="0.3" stroke-dasharray="3,3"/>
+                    <line x1="150" y1="10" x2="150" y2="70" stroke="#8A8A85" stroke-width="0.3" stroke-dasharray="3,3"/>
+                    <text x="50" y="85" text-anchor="middle" fill="#8A8A85" font-size="6" font-family="JetBrains Mono, monospace">4.20m</text>
+                    <text x="150" y="85" text-anchor="middle" fill="#8A8A85" font-size="6" font-family="JetBrains Mono, monospace">3.80m</text>
+                </svg>
+            </div>
+        </div>
+        <div class="page__number">Pág. 10</div>
+    </section>
+
+    <!-- ===================== SECCIÓN 4: DIRECCIÓN DE ARTE ===================== -->
+
+    <!-- Pág 11: Estilo Fotográfico -->
+    <section class="page page--fotografia" id="fotografia" data-page="11">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 4 — DIRECCIÓN DE ARTE Y SISTEMA GRÁFICO</div>
+            <h2 class="page__title">DIRECCIÓN DE ARTE FOTOGRÁFICA:<br>EL RELATO VISUAL</h2>
+            <div class="foto__grid">
+                <div class="foto__before">
+                    <div class="foto__placeholder foto__placeholder--before">
+                        <div class="foto__placeholder-inner">
+                            <svg viewBox="0 0 80 80" width="40" height="40">
+                                <rect x="10" y="20" width="60" height="50" fill="none" stroke="#8A8A85" stroke-width="1.5"/>
+                                <line x1="25" y1="20" x2="25" y2="70" stroke="#8A8A85" stroke-width="1"/>
+                                <line x1="55" y1="20" x2="55" y2="70" stroke="#8A8A85" stroke-width="1"/>
+                                <line x1="10" y1="45" x2="70" y2="45" stroke="#8A8A85" stroke-width="1"/>
+                            </svg>
+                            <span class="mono">ANTES</span>
+                            <span class="foto__placeholder-desc">Belleza de materiales desgastados<br>Colores desaturados<br>Tono documental</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="foto__after">
+                    <div class="foto__placeholder foto__placeholder--after">
+                        <div class="foto__placeholder-inner">
+                            <svg viewBox="0 0 80 80" width="40" height="40">
+                                <rect x="10" y="20" width="60" height="50" fill="none" stroke="#3C3A2E" stroke-width="1.5"/>
+                                <circle cx="55" cy="35" r="10" fill="none" stroke="#5C2A2A" stroke-width="1"/>
+                                <line x1="10" y1="55" x2="70" y2="55" stroke="#3C3A2E" stroke-width="0.5"/>
+                            </svg>
+                            <span class="mono">DESPUÉS</span>
+                            <span class="foto__placeholder-desc">Luminosidad y funcionalidad<br>Colores equilibrados<br>Tono aspiracional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foto__guidelines">
+                <div class="foto__guideline">
+                    <h4 class="foto__guideline-title">Luz</h4>
+                    <p class="body-serif">Siempre natural, cálida, que resalte texturas y volúmenes. Evitar flashes o iluminación dura.</p>
+                </div>
+                <div class="foto__guideline">
+                    <h4 class="foto__guideline-title">Enfoque</h4>
+                    <p class="body-serif">En detalles constructivos, materiales, la interacción humana con el espacio. Evitar encuadres genéricos de revistas.</p>
+                </div>
+                <div class="foto__guideline">
+                    <h4 class="foto__guideline-title">Tratamiento</h4>
+                    <p class="body-serif">Colores ligeramente desaturados para el "antes" (tono documental), más vibrantes pero equilibrados para el "después". Contraste suave.</p>
+                </div>
+                <div class="foto__guideline foto__guideline--dont">
+                    <h4 class="foto__guideline-title">No Usar</h4>
+                    <p class="body-serif">Fotografías de stock genéricas, imágenes sobrecargadas de filtros, representaciones 3D hiperrealistas que no correspondan a una obra finalizada.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page__number">Pág. 11</div>
+    </section>
+
+    <!-- ===================== SECCIÓN 5: PRESENCIA DIGITAL ===================== -->
+
+    <!-- Pág 12: Digital -->
+    <section class="page page--digital" id="digital" data-page="12">
+        <div class="page__content">
+            <div class="section-label">SECCIÓN 5 — PRESENCIA DIGITAL</div>
+            <h2 class="page__title">PRESENCIA DIGITAL:<br>WEB Y SOCIAL MEDIA</h2>
+            <!-- Digital Showcase: Phone + Carousel Mockups -->
+            <div class="digital-showcase">
+
+                <!-- Left: scrolling carousels -->
+                <div class="digital-showcase__side digital-showcase__side--left">
+                    <div class="carousel-scroll carousel-scroll--left">
+                        <!-- Carousel 1: Antes / Después -->
+                        <div class="insta-carousel">
+                            <div class="insta-carousel__header">
+                                <div class="insta-carousel__avatar">CO</div>
+                                <div class="insta-carousel__user">
+                                    <span class="insta-carousel__username mono">co_arquitectura</span>
+                                    <span class="insta-carousel__location mono">Córdoba Capital, Argentina</span>
+                                </div>
+                            </div>
+                            <div class="insta-carousel__content insta-carousel__content--proceso">
+                                <div class="insta-carousel__split">
+                                    <div class="insta-carousel__half insta-carousel__half--before">
+                                        <span class="mono">ANTES</span>
+                                    </div>
+                                    <div class="insta-carousel__half insta-carousel__half--after">
+                                        <span class="mono">DESPUÉS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insta-carousel__footer">
+                                <span class="insta-carousel__caption mono">El Proceso</span>
+                                <span class="insta-carousel__likes mono">127 Me gusta</span>
+                            </div>
+                        </div>
+                        <!-- Carousel 2: Inspiración -->
+                        <div class="insta-carousel">
+                            <div class="insta-carousel__header">
+                                <div class="insta-carousel__avatar">CO</div>
+                                <div class="insta-carousel__user">
+                                    <span class="insta-carousel__username mono">co_arquitectura</span>
+                                    <span class="insta-carousel__location mono">Inspiración</span>
+                                </div>
+                            </div>
+                            <div class="insta-carousel__content insta-carousel__content--moodboard">
+                                <span class="insta-carousel__mood-title">Inspiración</span>
+                            </div>
+                            <div class="insta-carousel__footer">
+                                <span class="insta-carousel__caption mono">Moodboard</span>
+                                <span class="insta-carousel__likes mono">89 Me gusta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center: Phone mockup -->
+                <div class="digital-showcase__center">
+            <div class="ig-phone">
+                <div class="ig-phone__notch"></div>
+                <!-- Profile header -->
+                <div class="ig-profile">
+                    <div class="ig-profile__top">
+                        <div class="ig-profile__avatar">
+                            <div class="ig-profile__avatar-logo">
+                                <span class="ig-profile__avatar-text">CO</span>
+                                <span class="ig-profile__avatar-underscore"></span>
+                            </div>
+                        </div>
+                        <div class="ig-profile__stats">
+                            <div class="ig-profile__stat">
+                                <span class="ig-profile__stat-num">47</span>
+                                <span class="ig-profile__stat-label">posts</span>
+                            </div>
+                            <div class="ig-profile__stat">
+                                <span class="ig-profile__stat-num">1.2k</span>
+                                <span class="ig-profile__stat-label">seguidores</span>
+                            </div>
+                            <div class="ig-profile__stat">
+                                <span class="ig-profile__stat-num">248</span>
+                                <span class="ig-profile__stat-label">seguidos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ig-profile__info">
+                        <span class="ig-profile__name">CO_ Arquitectura</span>
+                        <span class="ig-profile__category mono">Estudio de Arquitectura</span>
+                        <span class="ig-profile__bio">Arquitectura que acompaña.<br>Reciclaje · Renovación · Diseño interior<br>Córdoba Capital, Argentina</span>
+                    </div>
+                    <div class="ig-profile__actions">
+                        <span class="ig-profile__btn">Seguir</span>
+                        <span class="ig-profile__btn ig-profile__btn--outline">Mensaje</span>
+                    </div>
+                    <!-- Highlights -->
+                    <div class="ig-profile__highlights">
+                        <div class="ig-highlight">
+                            <div class="ig-highlight__circle"></div>
+                            <span class="ig-highlight__label">Obras</span>
+                        </div>
+                        <div class="ig-highlight">
+                            <div class="ig-highlight__circle"></div>
+                            <span class="ig-highlight__label">Proceso</span>
+                        </div>
+                        <div class="ig-highlight">
+                            <div class="ig-highlight__circle"></div>
+                            <span class="ig-highlight__label">Equipo</span>
+                        </div>
+                        <div class="ig-highlight">
+                            <div class="ig-highlight__circle"></div>
+                            <span class="ig-highlight__label">Tips</span>
+                        </div>
+                    </div>
+                    <!-- Grid tab -->
+                    <div class="ig-profile__tabs">
+                        <div class="ig-profile__tab ig-profile__tab--active">
+                            <svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="2" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="2" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="14" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                        </div>
+                        <div class="ig-profile__tab">
+                            <svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16" fill="currentColor" opacity="0.4"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feed grid — 3 columns, alternating photo/text posts -->
+                <div class="ig-feed">
+                    <!-- Row 1 -->
+                    <div class="ig-post ig-post--photo ig-post--arch1"></div>
+                    <div class="ig-post ig-post--text">
+                        <span class="ig-post__small-text mono">CO_ Arquitectura presenta</span>
+                        <span class="ig-post__big-text">Sobre<br>Proceso.</span>
+                    </div>
+                    <div class="ig-post ig-post--photo ig-post--detail1"></div>
+                    <!-- Row 2 -->
+                    <div class="ig-post ig-post--text ig-post--text-dark">
+                        <span class="ig-post__small-text mono">Reciclaje Nueva Córdoba</span>
+                        <span class="ig-post__big-text">Antes /<br>Después.</span>
+                    </div>
+                    <div class="ig-post ig-post--photo ig-post--material"></div>
+                    <div class="ig-post ig-post--text">
+                        <span class="ig-post__small-text mono">Filosofía de diseño</span>
+                        <span class="ig-post__big-text">Sobre<br>Espacio.</span>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="ig-post ig-post--photo ig-post--arch2"></div>
+                    <div class="ig-post ig-post--photo ig-post--hands"></div>
+                    <div class="ig-post ig-post--text ig-post--text-dark">
+                        <span class="ig-post__small-text mono">Materiales nobles</span>
+                        <span class="ig-post__big-text">Sobre<br>Textura.</span>
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="ig-post ig-post--text">
+                        <span class="ig-post__small-text mono">Inversión inteligente</span>
+                        <span class="ig-post__big-text">Sobre<br>Valor.</span>
+                    </div>
+                    <div class="ig-post ig-post--photo ig-post--interior"></div>
+                    <div class="ig-post ig-post--photo ig-post--arch3"></div>
+                </div>
+            </div>
+                </div><!-- /.digital-showcase__center -->
+
+                <!-- Right: scrolling carousel -->
+                <div class="digital-showcase__side digital-showcase__side--right">
+                    <div class="carousel-scroll carousel-scroll--right">
+                        <!-- Carousel 3: Detalles -->
+                        <div class="insta-carousel">
+                            <div class="insta-carousel__header">
+                                <div class="insta-carousel__avatar">CO</div>
+                                <div class="insta-carousel__user">
+                                    <span class="insta-carousel__username mono">co_arquitectura</span>
+                                    <span class="insta-carousel__location mono">Detalles constructivos</span>
+                                </div>
+                            </div>
+                            <div class="insta-carousel__content insta-carousel__content--detalles">
+                                <div class="insta-carousel__detail-grid">
+                                    <div class="insta-carousel__detail-cell"></div>
+                                    <div class="insta-carousel__detail-cell"></div>
+                                    <div class="insta-carousel__detail-cell"></div>
+                                    <div class="insta-carousel__detail-cell"></div>
+                                </div>
+                            </div>
+                            <div class="insta-carousel__footer">
+                                <span class="insta-carousel__caption mono">Detalles</span>
+                                <span class="insta-carousel__likes mono">203 Me gusta</span>
+                            </div>
+                        </div>
+                        <!-- Carousel 4: Proyecto highlight -->
+                        <div class="insta-carousel">
+                            <div class="insta-carousel__header">
+                                <div class="insta-carousel__avatar">CO</div>
+                                <div class="insta-carousel__user">
+                                    <span class="insta-carousel__username mono">co_arquitectura</span>
+                                    <span class="insta-carousel__location mono">Obra destacada</span>
+                                </div>
+                            </div>
+                            <div class="insta-carousel__content insta-carousel__content--proyecto">
+                                <span class="insta-carousel__proyecto-num mono">01</span>
+                                <span class="insta-carousel__proyecto-title">Reciclaje<br>Nueva Córdoba.</span>
+                                <span class="insta-carousel__proyecto-data mono">4 amb · 85m² · 2024</span>
+                            </div>
+                            <div class="insta-carousel__footer">
+                                <span class="insta-carousel__caption mono">Proyecto Destacado</span>
+                                <span class="insta-carousel__likes mono">312 Me gusta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.digital-showcase -->
+        </div>
+        <div class="page__number">Pág. 12</div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <div class="footer__co-wrap">
+                    <span class="footer__co">CO</span>
+                    <span class="footer__underscore"></span>
+                </div>
+            </div>
+            <p class="footer__text mono">Manual de Identidad Visual — 2024</p>
+            <p class="footer__text mono">Documento confidencial. Uso interno y de agencia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

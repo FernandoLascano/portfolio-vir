@@ -1,0 +1,53 @@
+export const projects = [
+  {
+    id: 1,
+    slug: 'co-arquitectura',
+    title: 'CO Arquitectura',
+    category: 'branding',
+    year: '2026',
+    tagline: 'Manual de identidad de marca interactivo para estudio de arquitectura',
+    description: 'Diseño y desarrollo del manual de identidad de marca completo para CO Arquitectura, un estudio cordobés con la filosofía "Arquitectura que acompaña". El proyecto incluye sistema de logo, paleta cromática, tipografía, dirección fotográfica, tono de voz y lineamientos para presencia digital — todo presentado como un sitio web interactivo de 12 secciones.',
+    challenge: 'Construir una identidad que comunicara cercanía y calidez humana en un rubro donde las marcas tienden a ser frías y distantes, manteniendo el profesionalismo que exige la arquitectura.',
+    solution: 'Un sistema visual basado en tonos terrosos (oliva, bordó ladrillo, negro absoluto) con tipografía Inter, Lora y JetBrains Mono. Fotografía en blanco y negro centrada en texturas, luz natural y el proceso creativo. Todo documentado en un manual web interactivo con scroll animado.',
+    services: ['Manual de Marca', 'Identidad Visual', 'Redes'],
+    color: '#3C3A2E',
+    accentColor: '#5C2A2A',
+    liveUrl: 'https://co-arquitectura-manual.vercel.app/',
+    images: [
+      '/projects/co-arquitectura/cover-hd.png',
+      '/projects/co-arquitectura/variantes-color.png',
+      '/projects/co-arquitectura/paleta-colores.png',
+      '/projects/co-arquitectura/proceso-02.jpg',
+      '/projects/co-arquitectura/proceso-03.jpg',
+      '/projects/co-arquitectura/proceso-04.jpg',
+    ],
+    featured: true,
+    size: 'large',
+  },
+  {
+    id: 2,
+    slug: 'thelma-clothing',
+    title: 'Thelma Clothing',
+    category: 'branding',
+    year: '2026',
+    tagline: 'Manual de identidad de marca para local de ropa femenina',
+    description: 'Desarrollo del manual de identidad visual completo para Thelma Clothing, una marca de moda femenina que apuesta por la elegancia atemporal, la calidad artesanal y la expresión auténtica del estilo personal. El proyecto incluye logotipo, paleta cromática, tipografía, estilo fotográfico, tono de voz y lineamientos para redes sociales.',
+    challenge: 'Crear una identidad que transmitiera sofisticación y calidez en un mercado de moda saturado, diferenciando a Thelma como una marca cercana pero premium.',
+    solution: 'Un sistema visual basado en tonalidades naturales y cálidas (taupe, beige, crema) con tipografía Cormorant Garamond y Montserrat. Monograma caligráfico con Great Vibes que aporta elegancia y personalidad. Todo documentado en un manual de identidad interactivo.',
+    services: ['Manual de Marca', 'Identidad Visual', 'Redes'],
+    color: '#3D3630',
+    accentColor: '#A89A8A',
+    liveUrl: '/projects/thelma-clothing/manual-identidad-thelma.html',
+    heroStyle: 'logo',
+    images: [
+      '/projects/thelma-clothing/logo-thelma-cover.svg',
+    ],
+    featured: true,
+    size: 'large',
+  },
+]
+
+export const categories = [
+  { id: 'all', label: 'Todo' },
+  { id: 'branding', label: 'Branding' },
+]

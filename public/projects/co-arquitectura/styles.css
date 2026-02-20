@@ -4485,6 +4485,7 @@ body {
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
     .page { padding: var(--space-xl) var(--space-md); }
+    .page__title { font-size: clamp(1.8rem, 5vw, 3.2rem); }
     .filosofia__grid { grid-template-columns: 1fr; }
     .personalidad__grid { grid-template-columns: 1fr; }
     .logotipo__analysis { grid-template-columns: 1fr; }
@@ -4503,10 +4504,19 @@ body {
     .mk-gallery { grid-template-columns: repeat(2, 1fr); }
     .senaletica__showcase { grid-template-columns: 1fr; }
     .papeleria__showcase { grid-template-columns: 1fr 1fr; }
+    .co-anim { min-height: 350px; }
+    .editorial-sample { padding: var(--space-md) var(--space-lg); }
 }
 
 @media (max-width: 768px) {
-    .nav { padding: 0.8rem 1.5rem; }
+    /* --- Navigation --- */
+    .nav {
+        padding: 0.8rem 1.2rem;
+        mix-blend-mode: normal;
+        background: rgba(26, 26, 26, 0.92);
+        backdrop-filter: blur(16px);
+    }
+    .nav--scrolled { padding: 0.6rem 1.2rem; }
     .nav__toggle { display: flex; }
     .nav__links {
         display: none;
@@ -4518,17 +4528,181 @@ body {
         backdrop-filter: blur(20px);
         flex-direction: column;
         padding: var(--space-sm);
+        max-height: 70vh;
+        overflow-y: auto;
     }
     .nav__links.open { display: flex; }
-    .page-indicator { right: 1.5rem; bottom: 1.5rem; }
-    .page__number { left: 1.5rem; bottom: 1.5rem; }
-    .page { padding: var(--space-lg) var(--space-sm); }
-    .color-swatches { grid-template-columns: repeat(2, 1fr); }
-    .color-swatches--brand { grid-template-columns: repeat(2, 1fr); }
-    .logo-variants__grid { grid-template-columns: 1fr; }
-    .foto__grid { grid-template-columns: 1fr; }
-    .foto__guidelines { grid-template-columns: 1fr; }
+    .nav__links a {
+        font-size: 0.7rem;
+        padding: 0.6rem 1rem;
+        display: block;
+        width: 100%;
+        color: rgba(255,255,255,0.7);
+    }
+
+    /* --- Page indicators --- */
+    .page-indicator { right: 1rem; bottom: 1rem; }
+    .page-indicator__current { font-size: 1.2rem; }
+    .page__number { left: 1rem; bottom: 1rem; font-size: 0.6rem; }
+
+    /* --- Page base --- */
+    .page {
+        padding: var(--space-lg) var(--space-sm);
+        min-height: auto;
+        min-height: 100svh;
+    }
+    .page__content { max-width: 100%; }
+
+    /* --- Section titles --- */
+    .section-label {
+        font-size: 0.5rem;
+        letter-spacing: 0.15em;
+        margin-bottom: var(--space-md);
+    }
+    .page__title {
+        font-size: clamp(1.6rem, 7vw, 2.8rem);
+        margin-bottom: var(--space-lg);
+    }
+    .page__title-note { font-size: 0.45em; }
+    .page__intro {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+    .subsection-title { font-size: 0.65rem; }
+
+    /* --- Cover page --- */
+    .cover__co { font-size: clamp(4rem, 20vw, 8rem); }
+    .cover__tagline {
+        font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+        letter-spacing: 0.2em;
+        margin-left: 0;
+        margin-top: 1.2rem;
+    }
+    .cover__heading {
+        font-size: clamp(0.45rem, 2vw, 0.65rem);
+        letter-spacing: 0.3em;
+    }
+    .cover__title { margin-top: 1.5rem; }
+
+    /* --- Filosofia --- */
+    .filosofia__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    .filosofia__text p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+    .co-anim {
+        min-height: 280px;
+        padding-right: 0;
+        align-items: center;
+    }
+    .co-scroll { align-items: center; }
+    .co-scroll__word {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        text-align: center;
+    }
+    .co-scroll__final {
+        font-size: clamp(3rem, 14vw, 6rem);
+        text-align: center;
+        align-self: center;
+    }
+    .co-anim__tagline { align-self: center; }
+
+    /* --- Personalidad --- */
+    .personalidad__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    .trait {
+        padding: var(--space-sm) var(--space-sm);
+        margin-bottom: var(--space-md);
+    }
+    .trait__name { font-size: 1.1rem; }
+    .trait__desc { font-size: 0.88rem; }
+    .tono-box { padding: var(--space-md); }
+
+    /* --- Logotipo --- */
+    .logotipo__grid-bg {
+        padding: var(--space-xl) var(--space-sm);
+    }
+    .logo--showcase .logo__co { font-size: clamp(3rem, 14vw, 6rem); }
+    .logo__tagline-showcase {
+        font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+        letter-spacing: 0.12em;
+    }
+    .logotipo__analysis {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    .analysis-item {
+        gap: var(--space-sm);
+        padding: var(--space-sm);
+    }
+    .analysis-item p { font-size: 0.88rem; }
+    .logo-variants__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+    .logo-variant {
+        padding: var(--space-md) var(--space-sm);
+    }
+    .logo--variant .logo__co { font-size: 2.2rem; }
+    .logotipo__variations { margin-top: var(--space-xl); }
+
+    /* --- Proteccion --- */
+    .proteccion__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    .protection-demo__box { padding: 2rem; }
+
+    /* --- Usos --- */
+    .usos__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    .uso-example__preview { min-height: 110px; padding: var(--space-md); }
+    .uso-logo__co { font-size: 2.2rem; }
+
+    /* --- Colores --- */
+    .color-swatches { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+    .color-swatches--brand { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+    .swatch__name { font-size: 0.78rem; }
+    .swatch__desc { font-size: 0.72rem; }
+    .proportion-bar { height: 45px; }
+    .proportion-bar__label { font-size: 0.6rem; }
+    .proportion-legend { gap: var(--space-sm); }
+    .proportion-legend span { font-size: 0.55rem; }
+
+    /* --- Tipografia --- */
+    .tipo__sample { font-size: clamp(1.1rem, 4vw, 1.8rem); }
+    .tipo__sample-serif { font-size: clamp(1.1rem, 4vw, 1.8rem); }
+    .tipo__sample-mono { font-size: clamp(0.8rem, 3vw, 1.1rem); }
+    .tipo__hierarchy { padding: var(--space-md); }
+    .hierarchy-demo__h1 { font-size: 1.8rem; }
+    .hierarchy-demo__h2 { font-size: 1.2rem; }
+    .hierarchy-demo__h3 { font-size: 0.95rem; }
+    .editorial-sample {
+        padding: var(--space-md) var(--space-md);
+    }
+    .editorial-sample__text { font-size: 0.95rem; line-height: 1.75; }
+    .editorial-sample::before { font-size: 3.5rem; left: var(--space-sm); }
+
+    /* --- Mono examples --- */
     .mono-examples__grid { grid-template-columns: 1fr; }
+    .mono-example { padding: var(--space-sm); }
+    .mono-example__value { font-size: 0.78rem; word-break: break-all; }
+
+    /* --- Fotografia --- */
+    .foto__grid { grid-template-columns: 1fr; }
+    .foto__guidelines { grid-template-columns: 1fr; gap: 0; }
+    .foto__guideline { padding: var(--space-sm); }
+    .foto__guideline-title { font-size: 0.75rem; }
+    .foto__guideline p { font-size: 0.85rem; }
+
+    /* --- Digital showcase --- */
     .digital-showcase {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -4549,12 +4723,169 @@ body {
         order: 3;
     }
     .digital-showcase__center { order: 1; }
-    .insta-carousel { width: 220px; }
-    .carousel-scroll { animation: none; }
+    .ig-phone { max-width: 300px; }
+    .insta-carousel { width: 200px; }
+    .carousel-scroll { animation: none; flex-direction: row; gap: 1rem; }
     .carousel-scroll--right { animation: none; }
-    .carousel-scroll { flex-direction: row; gap: 1rem; }
+
+    /* --- Other sections --- */
+    .sistema__principles { grid-template-columns: 1fr; }
+    .slides__grid { grid-template-columns: 1fr; }
     .mk-gallery { grid-template-columns: 1fr 1fr; }
     .mk-card--wide { grid-column: span 2; }
     .presupuesto__pages { grid-template-columns: 1fr; }
     .papeleria__showcase { grid-template-columns: 1fr; }
+    .senaletica__showcase { grid-template-columns: 1fr; gap: var(--space-lg); }
+
+    /* --- Footer --- */
+    .footer__inner { padding: var(--space-lg) var(--space-sm); }
+    .footer__co { font-size: 1.4rem; }
+}
+
+/* === SMALL PHONES (max-width: 480px) === */
+@media (max-width: 480px) {
+    /* --- Navigation --- */
+    .nav { padding: 0.6rem 0.8rem; }
+    .nav--scrolled { padding: 0.5rem 0.8rem; }
+    .nav__co { font-size: 1.2rem; }
+    .nav__links a { font-size: 0.65rem; padding: 0.5rem 0.8rem; }
+
+    /* --- Page base --- */
+    .page { padding: var(--space-md) 0.75rem; }
+    .page__title {
+        font-size: clamp(1.3rem, 6.5vw, 2rem);
+        margin-bottom: var(--space-md);
+    }
+    .section-label { font-size: 0.45rem; margin-bottom: var(--space-sm); }
+
+    /* --- Cover --- */
+    .cover__co { font-size: clamp(3rem, 18vw, 5rem); }
+    .cover__tagline {
+        font-size: 0.45rem;
+        letter-spacing: 0.15em;
+    }
+    .cover__heading {
+        font-size: 0.4rem;
+        letter-spacing: 0.2em;
+    }
+
+    /* --- Filosofia CO animation --- */
+    .co-anim { min-height: 220px; }
+    .co-scroll__word { font-size: clamp(1.2rem, 5.5vw, 2rem); }
+    .co-scroll__final { font-size: clamp(2.5rem, 12vw, 4.5rem); }
+    .co-anim__tagline { font-size: 0.55rem; }
+    .filosofia__text p { font-size: 0.88rem; line-height: 1.7; }
+
+    /* --- Personalidad --- */
+    .trait { padding: 0.8rem; margin-bottom: var(--space-sm); }
+    .trait__name { font-size: 1rem; }
+    .trait__desc { font-size: 0.82rem; }
+    .tono-box { padding: var(--space-sm); }
+    .tono-box__title { font-size: 0.6rem; }
+    .tono-box .body-serif { font-size: 0.88rem; }
+
+    /* --- Logotipo --- */
+    .logotipo__grid-bg { padding: var(--space-lg) 0.5rem; }
+    .logo--showcase .logo__co { font-size: clamp(2.5rem, 12vw, 5rem); }
+    .logo__tagline-showcase { font-size: 0.5rem; letter-spacing: 0.08em; }
+    .logo--variant .logo__co { font-size: 1.8rem; }
+    .logo__tagline-variant { font-size: 0.4rem; }
+    .analysis-item__icon { width: 36px; height: 36px; }
+    .analysis-item p { font-size: 0.82rem; }
+
+    /* --- Proteccion --- */
+    .protection-demo__box { padding: 1.5rem; }
+    .logo--protection .logo__co { font-size: 2rem; }
+    .min-size-label { font-size: 0.6rem; }
+
+    /* --- Usos --- */
+    .uso-example__preview { min-height: 90px; padding: var(--space-sm); }
+    .uso-logo__co { font-size: 1.8rem; }
+    .uso-logo__tag { font-size: 0.35rem; }
+    .uso-example__caption { font-size: 0.6rem; }
+
+    /* --- Colores --- */
+    .color-swatches,
+    .color-swatches--brand {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    .swatch__block { margin-bottom: 0.5rem; }
+    .swatch__name { font-size: 0.7rem; }
+    .swatch__hex { font-size: 0.6rem; }
+    .swatch__desc { font-size: 0.65rem; }
+    .proportion-bar { height: 36px; }
+    .proportion-bar__label { font-size: 0.5rem; }
+    .proportion-legend span { font-size: 0.5rem; }
+
+    /* --- Tipografia --- */
+    .tipo__sample { font-size: clamp(0.9rem, 3.5vw, 1.4rem); }
+    .tipo__sample-serif { font-size: clamp(0.9rem, 3.5vw, 1.4rem); }
+    .tipo__sample-mono { font-size: clamp(0.7rem, 2.5vw, 0.9rem); }
+    .tipo__example { font-size: 0.8rem; }
+    .tipo__use-serif { font-size: 0.85rem; }
+    .hierarchy-demo__h1 { font-size: 1.4rem; }
+    .hierarchy-demo__h2 { font-size: 1rem; }
+    .hierarchy-demo__h3 { font-size: 0.85rem; }
+    .hierarchy-demo__body { font-size: 0.82rem; }
+    .tipo__hierarchy { padding: var(--space-sm); }
+    .editorial-sample { padding: var(--space-sm); }
+    .editorial-sample__text { font-size: 0.88rem; line-height: 1.7; text-align: left; }
+    .editorial-sample::before { font-size: 2.5rem; top: -5px; left: 0.5rem; }
+
+    /* --- Mono examples --- */
+    .mono-example { padding: 0.75rem; }
+    .mono-example__label { font-size: 0.55rem; }
+    .mono-example__value { font-size: 0.7rem; }
+
+    /* --- Fotografia --- */
+    .foto__placeholder-inner .mono { font-size: 0.7rem; }
+    .foto__placeholder-desc { font-size: 0.65rem; }
+    .foto__guideline { padding: 0.75rem; }
+    .foto__guideline-title { font-size: 0.7rem; }
+    .foto__guideline p { font-size: 0.8rem; }
+
+    /* --- Digital showcase --- */
+    .ig-phone {
+        max-width: 260px;
+        border-radius: 22px;
+        border-width: 2px;
+    }
+    .ig-phone__notch { width: 90px; height: 18px; }
+    .ig-profile { padding: 0 0.5rem; }
+    .ig-profile__avatar { width: 40px; height: 40px; }
+    .ig-profile__avatar-text { font-size: 0.7rem; }
+    .ig-profile__stat-num { font-size: 0.6rem; }
+    .ig-profile__stat-label { font-size: 0.38rem; }
+    .ig-profile__name { font-size: 0.58rem; }
+    .ig-profile__bio { font-size: 0.45rem; }
+    .ig-profile__btn { font-size: 0.45rem; padding: 0.25rem 0; }
+    .ig-highlight__circle { width: 32px; height: 32px; }
+    .ig-highlight__label { font-size: 0.35rem; }
+    .insta-carousel { width: 160px; }
+    .insta-carousel__avatar { width: 20px; height: 20px; font-size: 0.35rem; }
+    .insta-carousel__username { font-size: 0.48rem; }
+    .insta-carousel__location { font-size: 0.35rem; }
+    .insta-carousel__caption { font-size: 0.48rem; }
+    .insta-carousel__likes { font-size: 0.35rem; }
+    .insta-carousel__proyecto-title { font-size: 0.85rem; }
+    .insta-carousel__half span { font-size: 0.55rem; }
+    .digital-showcase__side { gap: 0.75rem; }
+    .carousel-scroll { gap: 0.75rem; }
+
+    /* --- Footer --- */
+    .footer__inner { padding: var(--space-md) 0.75rem; }
+    .footer__co { font-size: 1.2rem; }
+    .footer__text { font-size: 0.55rem; }
+
+    /* --- Proportion bar small labels --- */
+    .proportion-bar__segment:nth-child(4) .proportion-bar__label,
+    .proportion-bar__segment:nth-child(5) .proportion-bar__label {
+        font-size: 0.45rem;
+    }
+
+    /* --- Page number & indicator adjustments --- */
+    .page-indicator { right: 0.75rem; bottom: 0.75rem; }
+    .page-indicator__current { font-size: 1rem; }
+    .page__number { left: 0.75rem; bottom: 0.75rem; font-size: 0.55rem; }
 }

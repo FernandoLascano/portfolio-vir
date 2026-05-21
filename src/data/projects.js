@@ -14,7 +14,7 @@ export const projects = [
     accentColor: '#5C2A2A',
     liveUrl: 'https://co-arquitectura-manual-v2.vercel.app/',
     images: [
-      '/projects/co-arquitectura/cover-hd.png',
+      '/projects/co-arquitectura/cover-v2.svg',
       '/projects/co-arquitectura/variantes-color.png',
       '/projects/co-arquitectura/paleta-colores.png',
       '/projects/co-arquitectura/proceso-02.jpg',

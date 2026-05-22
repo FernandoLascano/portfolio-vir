@@ -74,6 +74,7 @@ const ProjectsGallery = () => {
                 key={project.id}
                 project={project}
                 index={index}
+                total={filteredProjects.length}
                 onHover={setHoveredProject}
                 isHovered={hoveredProject === project.id}
               />
@@ -107,18 +108,23 @@ const ProjectsGallery = () => {
   )
 }
 
-const ProjectCard = ({ project, index, onHover, isHovered }) => {
+const ProjectCard = ({ project, index, total, onHover, isHovered }) => {
   const cardRef = useRef(null)
 
-  // Determine grid span based on project size
+  // Layout adapts to total project count for an editorial, intentional composition
   const getGridClasses = () => {
-    const sizeClasses = {
-      large: 'col-span-12 lg:col-span-8',
-      medium: 'col-span-12 md:col-span-6 lg:col-span-4',
-      small: 'col-span-12 md:col-span-6 lg:col-span-4',
+    // 2 projects → staggered editorial: wide first card + offset narrow second card
+    if (total === 2) {
+      if (index === 0) return 'col-span-12 lg:col-span-7'
+      return 'col-span-12 md:col-span-8 md:col-start-3 lg:col-span-4 lg:col-start-9 lg:mt-32'
     }
-
-    // Create asymmetric layout
+    // 3 projects → triangular: hero + two staggered below
+    if (total === 3) {
+      if (index === 0) return 'col-span-12 lg:col-span-8'
+      if (index === 1) return 'col-span-12 md:col-span-6 lg:col-span-4 lg:mt-24'
+      return 'col-span-12 md:col-span-8 md:col-start-3 lg:col-span-7 lg:col-start-3'
+    }
+    // 4+ projects → asymmetric mosaic
     if (index % 5 === 0) return 'col-span-12 lg:col-span-8 lg:row-span-2'
     if (index % 5 === 1) return 'col-span-12 md:col-span-6 lg:col-span-4'
     if (index % 5 === 2) return 'col-span-12 md:col-span-6 lg:col-span-4'
@@ -127,6 +133,15 @@ const ProjectCard = ({ project, index, onHover, isHovered }) => {
   }
 
   const getAspectRatio = () => {
+    if (total === 2) {
+      if (index === 0) return 'aspect-[4/3]'
+      return 'aspect-[3/4]'
+    }
+    if (total === 3) {
+      if (index === 0) return 'aspect-[16/10]'
+      if (index === 1) return 'aspect-[3/4]'
+      return 'aspect-[16/9]'
+    }
     if (index % 5 === 0) return 'aspect-[4/3]'
     if (index % 5 === 1) return 'aspect-square'
     if (index % 5 === 2) return 'aspect-[3/4]'

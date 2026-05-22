@@ -174,7 +174,7 @@ const ProjectCard = ({ project, index, total, onHover, isHovered }) => {
           {project.heroStyle === 'logo' ? (
             <motion.div
               className="absolute inset-0 flex items-center justify-center"
-              style={{ backgroundColor: '#f5f0e9' }}
+              style={{ backgroundColor: project.heroBg || '#f5f0e9' }}
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.6, ease: [0.33, 1, 0.68, 1] }}

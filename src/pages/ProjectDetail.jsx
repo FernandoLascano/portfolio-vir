@@ -142,12 +142,13 @@ const HeroSection = ({ project }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   const isLogoHero = project.heroStyle === 'logo'
+  const isLightHero = isLogoHero && !project.heroDark
 
   return (
     <section
       ref={heroRef}
       className="relative min-h-screen flex items-end overflow-hidden"
-      style={isLogoHero ? { backgroundColor: '#EBE4DA' } : undefined}
+      style={isLogoHero ? { backgroundColor: project.heroBg || '#EBE4DA' } : undefined}
     >
       {/* Background Image */}
       <motion.div
@@ -180,7 +181,7 @@ const HeroSection = ({ project }) => {
           >
             <Link
               to="/"
-              className={`inline-flex items-center gap-2 font-mono text-sm uppercase tracking-wider transition-colors mb-8 ${isLogoHero ? 'text-ink/40 hover:text-ink' : 'text-paper/60 hover:text-acid'}`}
+              className={`inline-flex items-center gap-2 font-mono text-sm uppercase tracking-wider transition-colors mb-8 ${isLightHero ? 'text-ink/40 hover:text-ink' : 'text-paper/60 hover:text-acid'}`}
             >
               <span>←</span>
               <span>Volver a proyectos</span>
@@ -208,7 +209,7 @@ const HeroSection = ({ project }) => {
 
           {/* Title */}
           <motion.h1
-            className={`font-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-6 ${isLogoHero ? 'text-ink' : 'text-paper'}`}
+            className={`font-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-6 ${isLightHero ? 'text-ink' : 'text-paper'}`}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, type: 'spring', damping: 20 }}
@@ -218,7 +219,7 @@ const HeroSection = ({ project }) => {
 
           {/* Tagline */}
           <motion.p
-            className={`font-body text-xl lg:text-2xl max-w-2xl ${isLogoHero ? 'text-ink/60' : 'text-paper/70'}`}
+            className={`font-body text-xl lg:text-2xl max-w-2xl ${isLightHero ? 'text-ink/60' : 'text-paper/70'}`}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
@@ -233,8 +234,8 @@ const HeroSection = ({ project }) => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            <div className={`w-12 h-px ${isLogoHero ? 'bg-ink/20' : 'bg-paper/30'}`} />
-            <span className={`font-mono text-xs uppercase tracking-wider ${isLogoHero ? 'text-ink/30' : 'text-paper/40'}`}>
+            <div className={`w-12 h-px ${isLightHero ? 'bg-ink/20' : 'bg-paper/30'}`} />
+            <span className={`font-mono text-xs uppercase tracking-wider ${isLightHero ? 'text-ink/30' : 'text-paper/40'}`}>
               Scroll para descubrir
             </span>
           </motion.div>
@@ -248,8 +249,8 @@ const HeroSection = ({ project }) => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.8, type: 'spring' }}
       >
-        <div className={`w-24 h-24 lg:w-32 lg:h-32 rounded-full border-3 flex items-center justify-center ${isLogoHero ? 'border-ink/20' : 'border-paper'}`}>
-          <span className={`font-display text-3xl lg:text-4xl ${isLogoHero ? 'text-ink/40' : 'text-paper'}`}>{project.year}</span>
+        <div className={`w-24 h-24 lg:w-32 lg:h-32 rounded-full border-3 flex items-center justify-center ${isLightHero ? 'border-ink/20' : 'border-paper'}`}>
+          <span className={`font-display text-3xl lg:text-4xl ${isLightHero ? 'text-ink/40' : 'text-paper'}`}>{project.year}</span>
         </div>
       </motion.div>
     </section>

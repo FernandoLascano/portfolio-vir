@@ -39,6 +39,8 @@ export const projects = [
     accentColor: '#E84E1B',
     liveUrl: 'https://formax-identidad-visual.netlify.app/#s4',
     heroStyle: 'logo',
+    heroBg: '#000000',
+    heroDark: true,
     images: [
       '/projects/formax/formax-logo.png',
       '/projects/formax/mk-fachada.png',

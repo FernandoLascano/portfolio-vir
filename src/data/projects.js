@@ -50,9 +50,32 @@ export const projects = [
     featured: true,
     size: 'large',
   },
+  {
+    id: 3,
+    slug: 'florencia-barraza',
+    title: 'Florencia Barraza Bravino',
+    category: 'editorial',
+    year: '2026',
+    tagline: 'Tarjetas profesionales para abogada — identidad sobria con monograma',
+    description: 'Diseño de tarjetas profesionales para Florencia Barraza Bravino, abogada con foco en derecho laboral, ART, familia, divorcios, ejecuciones y civil. El sistema combina un monograma FBB en estilo serif elegante con acabado rose-gold metalizado, sobre fondo bordó con patrón geométrico tono sobre tono. El reverso en crema mantiene la legibilidad para los datos de contacto y las áreas de práctica.',
+    challenge: 'Comunicar seriedad, oficio y cercanía en una pieza de papelería que tiene segundos para transmitir confianza. Diferenciar de la estética genérica del rubro legal sin caer en lo ostentoso.',
+    solution: 'Paleta acotada: bordó profundo + crema + rose-gold como acento puntual. Monograma FBB construido con tipografía serif italic que aporta carácter clásico. Patrón geométrico de medios círculos tono sobre tono que agrega textura sin competir con la información. Tipografía editorial para los servicios en el reverso.',
+    services: ['Identidad Visual', 'Papelería', 'Tarjetas Profesionales'],
+    color: '#6f1d28',
+    accentColor: '#d4a795',
+    heroStyle: 'logo',
+    heroBg: '#6f1d28',
+    heroDark: true,
+    images: [
+      '/projects/florencia-barraza/cover.svg',
+    ],
+    featured: true,
+    size: 'large',
+  },
 ]
 
 export const categories = [
   { id: 'all', label: 'Todo' },
   { id: 'branding', label: 'Branding' },
+  { id: 'editorial', label: 'Editorial' },
 ]

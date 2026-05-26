@@ -6,7 +6,7 @@
     </pattern>
     <style>
       .co-shape { fill: #5c292a; }
-      .co-text { fill: #5c292a; }
+      .inner-text { fill: #f0ebe3; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 600; letter-spacing: 0.12em; }
       .manual-text { fill: #5c292a; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 500; letter-spacing: 0.35em; font-size: 18px; opacity: 0.75; }
     </style>
   </defs>
@@ -20,13 +20,17 @@
   <!-- Bordó accent corner (top-right) -->
   <rect x="1140" y="0" width="60" height="40" fill="#5c292a"/>
 
-  <!-- CO Arquitectura logo, centered -->
+  <!-- CO Arquitectura logo, centered (viewBox 0 0 445.87 187.71 → scaled & placed at 377,360) -->
   <g transform="translate(377, 360)">
+    <!-- C shape (rectangle with rounded left side) -->
     <path class="co-shape" d="M148.14.59h-59.08C39.87.59,0,40.47,0,89.65h0c0,49.19,39.87,89.06,89.06,89.06h59.08V.59Z"/>
+    <!-- O shape (ellipse) -->
     <ellipse class="co-shape" cx="247.26" cy="89.71" rx="95.24" ry="89.71"/>
-    <text class="co-text" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13.55px" transform="translate(256.19 159.02) rotate(-.61) scale(1.11 1)"><tspan x="0" y="0">A</tspan><tspan x="10.37" y="0" style="letter-spacing:0.06em">R</tspan><tspan x="20.65" y="0">QUI</tspan><tspan x="51.77" y="0">TECTURA </tspan></text>
-    <rect class="co-shape" x="323.07" y="181.07" width="69.79" height="6.65"/>
-    <text class="co-text" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="13px" transform="translate(315.45 174.57) scale(1.06 1)"><tspan x="0" y="0" xml:space="preserve"> QUE </tspan><tspan x="40.99" y="0" style="letter-spacing:0.05em">A</tspan><tspan x="50.67" y="0">COM</tspan><tspan x="84.1" y="0" style="letter-spacing:0em">P</tspan><tspan x="92.64" y="0">AÑA</tspan></text>
+
+    <!-- Text inside the O, in cream -->
+    <text class="inner-text" x="247.26" y="98" text-anchor="middle" font-size="14">ARQUITECTURA</text>
+    <rect x="220" y="106" width="55" height="2.5" fill="#f0ebe3"/>
+    <text class="inner-text" x="247.26" y="128" text-anchor="middle" font-size="14">QUE ACOMPAÑA</text>
   </g>
 
   <!-- "MANUAL DE IDENTIDAD VISUAL" text below logo -->

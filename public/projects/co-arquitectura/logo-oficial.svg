@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.87 187.71">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .06em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f0ebe3;
+      }
+
+      .cls-3 {
+        letter-spacing: .05em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-size: 13px;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #5c292a;
+      }
+
+      .cls-5, .cls-8 {
+        font-family: Lexend-SemiBold, Lexend;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+      }
+
+      .cls-9 {
+        fill: #1d1d1b;
+      }
+
+      .cls-9, .cls-7, .cls-2 {
+        letter-spacing: .07em;
+      }
+
+      .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-10 {
+        letter-spacing: .07em;
+      }
+
+      .cls-11 {
+        letter-spacing: .07em;
+      }
+
+      .cls-8 {
+        font-size: 13.55px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <path class="cls-6" d="M148.14.59h-59.08C39.87.59,0,40.47,0,89.65h0c0,49.19,39.87,89.06,89.06,89.06h59.08V.59Z"/>
+      <ellipse class="cls-6" cx="247.26" cy="89.71" rx="95.24" ry="89.71"/>
+      <text class="cls-8" transform="translate(256.19 159.02) rotate(-.61) scale(1.11 1)"><tspan class="cls-2" x="0" y="0">A</tspan><tspan class="cls-1" x="10.37" y="0">R</tspan><tspan class="cls-2" x="20.65" y="0">QUI</tspan><tspan class="cls-7" x="51.77" y="0">TECTURA </tspan><tspan class="cls-9"><tspan x="0" y="14.59" xml:space="preserve">  </tspan></tspan></text>
+      <rect class="cls-6" x="323.07" y="181.07" width="69.79" height="6.65"/>
+      <text class="cls-5" transform="translate(315.45 174.57) scale(1.06 1)"><tspan class="cls-11" x="0" y="0" xml:space="preserve"> QUE </tspan><tspan class="cls-3" x="40.99" y="0">A</tspan><tspan class="cls-10" x="50.67" y="0">COM</tspan><tspan class="cls-4" x="84.1" y="0">P</tspan><tspan class="cls-11" x="92.64" y="0">AÑA</tspan></text>
+    </g>
+  </g>
+</svg>
